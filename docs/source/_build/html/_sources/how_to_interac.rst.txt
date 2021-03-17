@@ -17,18 +17,19 @@ How to use the controllers
 --------------------------
 In this section we provide guidelines on how to use the Oculus controllers as this is our testing scenario. We can provide guidelines upon request on how to use e.g. VIVE controllers instead.
 
-.. note:: When setting up the VR system you can choose which hand is your "primary hand" for commands. In the following list of instructions the controller with the active commands will be one of the primary hand.
+.. note:: When setting up the VR system you can choose which hand is your "primary hand" you will use to delivery commands. Usually righ-handed people will set the right hand to be the primary hand and the left hand to be the secondary hand. The viceversa usually applies to left handed people. In the following we will describe both scenarios and will refer to primary hand and secondary hands in this sense.
 
 .. raw:: html
 
   <img src="_static/oculus.png"
        style="width:100%;height:auto;">
 
-#. **Thumbstick**: it can be used to scroll lists (aka catalogs)
+#. **Thumbstick (primary hand)**: it can be used to scroll (up and down) lists (aka catalogs)
+#. **Thumbstick (secondary hand)**: it can be used to undo/redo a painting action (when in paint mode) by moving left (to undo) and right (to redo after undoing).
 #. **Menu button**: this should NOT be pressed, it is a Oculus function unrelated to our software
 #. **Grip button**: For navigation. Hold button down with one hand, this ‘grabs’ the cube, and you can move it around with hand/arm motion;  press grip button on both hands to zoom in and out (arm motion in/out along horizontal axis), and rotation (hand/arm motion that is a scissor motion).
-#. **“Y” or "B" buttons**: it activates the quick menu option (see :ref:`gui`). If the primary hand is set to be the left hand then the reference button is the "Y" button; if the primary hand is set to be the right hand then the reference button is the "B" button. 
-#. **"X” or "A" buttons**: it activates the seclection option. Use this to create a box around a region (e.g. a source) of choice. How to use this: you reach your hand behind and upward of the object (in 3D), press and hold button as you drag it across and down the source, creating a box within which your regiond of interest should be.  After you have selected the source, you can crop the box using either a voice command “Crop Selection” or the Crop button in the Quick Menu. If the primary hand is set to be the left hand then the reference button is the "X" button; if the primary hand is set to be the right hand then the reference button is the "A" button. 
+#. **“Y” or "B" button**: it activates the quick menu option (see :ref:`gui`). If the primary hand is set to be the left hand then the reference button is the "Y" button; if the primary hand is set to be the right hand then the reference button is the "B" button. 
+#. **"X” or "A" button**: it activates the seclection option. Use this to create a box around a region (e.g. a source) of choice. How to use this: you reach your hand behind and upward of the object (in 3D), press and hold button as you drag it across and down the source, creating a box within which your regiond of interest should be.  After you have selected the source, you can crop the box using either a voice command “Crop Selection” or the Crop button in the Quick Menu. If the primary hand is set to be the left hand then the reference button is the "X" button; if the primary hand is set to be the right hand then the reference button is the "A" button. 
 #. **Trigger**: it is used for a number of actions:
 
    * once a menu is active a laser pointer will be visible. The trigger can then be used to select options on menus.

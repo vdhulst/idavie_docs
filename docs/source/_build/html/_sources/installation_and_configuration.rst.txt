@@ -25,7 +25,7 @@ If errors are encountered that you can't solve, please send us the log files alo
 
 (Press WIN + R to open the run dialog, and paste the above address in to open the folder).
 
-known issues
+Known issues
 ------------
 The following are issues we already know about and that will be fixed as soon as possible:
 
