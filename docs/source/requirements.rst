@@ -18,8 +18,11 @@ Any VR headset compatible with SteamVR should function. The following VR headset
 * Valve Index
 * Samsung Odysse
 
-In the IVL we use the Valve Index (with wall-mounted sensors), while on the road we use Alienware gpu-powered laptops and the Oculus Rift S. 
+.. Tip:: In the IDIA Visualisation Lab we use the Valve Index (with wall-mounted sensors), while on the road we use Alienware gpu-powered laptops and the Oculus Rift S. 
 
 Software
 --------
-Windows 10 (version 1903 or newer) is required. The SteamVR runtime is required. Note that in order to start SteamVR, some headsets (e.g. Oculus Rift) require additional software to be installed. Instruction should be provided by the headsets webpage.
+In order to run iDaVIE-v the following software needs to be installed:
+
+#. Windows 10 (version 1903 or newer) is required.
+#. The SteamVR runtime is required. Note that in order to start SteamVR, some headsets (e.g. Oculus Rift) require additional software to be installed. Instruction should be provided on the headsets webpage.

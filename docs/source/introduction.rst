@@ -1,5 +1,6 @@
 Introduction
 ============
+.. note:: The current version of the software is in beta testing so please be aware that issues might arise. We also appreciate your collaboration in identifying them and, if you do, please post them in the relevant page on `Github <https://github.com/idia-astro/idavie_releases/issues>`_. All issues will be fixed for the first data release. 
 
 The mission of iDaVIE-v
 -----------------------
@@ -20,13 +21,13 @@ Getting help
 ------------
 The iDaVIE team welcomes any suggestion, feature request, or bug report, to make iDaVIE-v better via 
 
-* Recommended: `Github Issue <https://github.com/idia-astro/idavie_releases>`_
+* Recommended: `Github Issue <https://github.com/idia-astro/idavie_releases/issues>`_
 * Only if necessary: `IDIA vislab help <vislab@idia.ac.za>`_ (vislab@idia.ac.za) 
 
 
 Contributors
 ------------
-The development of the iDaVIE project is a joint effort from:
+The development of the iDaVIE-v project is a joint effort from:
 
 * `The Inter-university Institute for Data Intensive Astronomy (IDIA) <https://idia.ac.za>`_
 * `The IDIA Visualisation Lab <https://https://vislab.idia.ac.za>`_
@@ -42,10 +43,10 @@ TBD
 Other relevant references are:
 
 * "Exploring and Interrogating Astrophysical Data in Virtual Reality", `Jarrett et al. 2021 <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_
-* "iDaVIE-v: immersive Data Visualisation Interactive Explorer for volumetric rendering", `Marchetti et al. 2020 <https://ui.adsabs.harvard.edu/abs/2020arXiv201211553M/abstract>`_
+* "iDaVIE-v: immersive Data Visualisation Interactive Explorer for volumetric rendering", `Marchetti et al. 2021 <https://ui.adsabs.harvard.edu/abs/2020arXiv201211553M/abstract>`_
 
-Acknowledgement
----------------
+Acknowledgements
+----------------
 * The Inter-University Institute for Data Intensive Astronomy is a partnership of three South African universities: the University of Cape Town, the University of the Western Cape and the University of Pretoria.
 
 * This project received support from the National Research Foundation under the Research Career Advancement and South African Research Chair Initiative programs (SARChI)

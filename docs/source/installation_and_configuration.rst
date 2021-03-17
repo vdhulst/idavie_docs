@@ -5,7 +5,7 @@ Installation and configuration
 
 Executable
 -----------
-Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can unzip the provided iDAVIE-v.zip, which contains the executables .exe (and other reference files).
+Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided iDAVIE-v.zip, which contains the executable .exe (and other reference files). 
 
 .. raw:: html
 
@@ -17,19 +17,43 @@ To start the software, double-click on the executable iDaVIE-v file.
 
 Source code
 -----------
-Currently not available
+Currently not available. The source code will be made available after beta is completed.
 
 Troubleshooting
 ---------------
-If errors are encountered that you can't solve, please send us the log files along with your bug reports. The log files can be found in the directory :literal:`%appdata%/../LocalLow/DefaultCompany/iDaVIE-v`
+In this section we share some useful tips where we found a solution to a known issue:
 
-(Press WIN + R to open the run dialog, and paste the above address in to open the folder).
+- Under some circumstances the voice commands stop to work. If this happens we found that the following sequence of actions solves the problem (**NOTE**: this solution has been tested only with Oculus Rift S and on machines where the RealTek Audio driver is installed, we cannot assure it will work for any set up)
+
+  #. take the headset off 
+  
+  #. make sure the iDaVIE-v Desktop GUI is front and center and no other windows are in front of it
+  
+  #. use the Windows search function (lower left hand corner - says Type here to search), and type audio
+  
+  #. open the RealTek Audio Console that will apper after the search
+  
+  #. check that the Microphone is set to maxium;   toggle <mute> on and then off. Now the mic should be on and ready to receive commands.
+
+  #. close the Audio Console
+
+  #. put the headset back on and use the voice commands as normal.
+
+- If errors are encountered that you can't solve, please:
+
+  #. post and issue on the Github repository
+  
+  #. make contact with us and send us the log files along with your bug reports. The log files can be found in the directory :literal:`%appdata%/../LocalLow/DefaultCompany/iDaVIE-v`. In order to find this directory using Windows please press :literal:`WIN + R` to open the run dialog, and paste the path directory in to open the folder). 
+  
+.. WARNING:: Unity only allows for two log file to be stored so, if a problem is encountered is best to go and look for the log file **BEFORE** starting a new iDaVIE-v session otherwise the log file reporting the specific problem encountered can be lost. 
 
 Known issues
 ------------
-The following are issues we already know about and that will be fixed as soon as possible:
+.. note:: The current version of the software is in beta testing so please be aware that issues might arise. We also appreciate your collaboration in identifying them and, if you do, please post them in the relevant page on `Github <https://github.com/idia-astro/idavie_releases/issues>`_. All issues will be fixed for the first data release. 
 
-- problem with mask
-- problem with selection box 
-- In order to paint, a region must be selected and cropped to
-- we will make a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning. See more details `here <https://www.symantec.com/connect/forums/how-avoid-wsreputation1-error>`_
+The following are issues we already know about and that will be fixed as soon as possible:
+ 
+#. In order to paint, a region must be selected and cropped to
+#. The option to paint a new source mask has multiple issues we are aware of. If you encounter problem we suggest you restart iDaVIE-v and you send us your log file.
+#. Problem with virus protection systems. We will make a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning. See more details `here <https://www.symantec.com/connect/forums/how-avoid-wsreputation1-error>`_
+
