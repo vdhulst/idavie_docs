@@ -3,7 +3,7 @@
 "How to" demos
 ==============
 
-.. note:: This section is under construction. Some elements in the ideos may slightly differ from what the user actually see in the rendering of the current software. We apologies for the inconvenience.
+.. note:: This section is under construction. Some elements in the videos may slightly differ from what the user actually see in the rendering of the current software. We apologies for the inconvenience.
 
 In this section we store example videos that should intuitively explain how to use iDaVIE-v.
 
@@ -36,10 +36,17 @@ iDaVIE-v allows to take a "screenshot" of what is in front of the user in a part
 
 Create/modify/save a mask 
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-TBD
+iDaVIE-v allows to create a mask or to modify an existing mask in VR. Both can be done using the "Paint menu" that can be invoked from the "Quick menu" by lasering the brush icon. Using the functionality available in the "Paint menu" the user can add or delete mask voxels using the controllers. Once done the user can save the created/updated mask overwriting an existing one or creating a new one. As also explained in :ref:`inputs_outputs`:
+
+* if a mask is loaded and modified in VR then it can be saved either overwriting the original mask **or**  as a copy. In the former case the mask will be saved with the same name of the original mask and in the same directory, in the latter case the suffix :literal:`-copy.fits` will be added to the original mask name and the edited mask will be saved in the same directory as the original mask (e.g. the edited mask file name will then be :literal:`originalmaskname-copy.fits`).
+* if no mask is provided in input, but one is created in iDaVIE-v, then the created mask is saved in the same directory of the data cube and a suffix :literal:`-mask.fits` will be addedd to the cube name to indicate the maks file (e.g. the created mask file name will then be :literal:`originalcubename-mask.fits`).
+
+**Demo TBD**
 
 Interact with catalogs in VR
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+iDaVIE-v allows to load catalos from the Desktop GUI and to overplot them on the visualised data cube.
+
 .. raw:: html
 
     <video controls loop style="width:100%;height:auto;">
@@ -48,6 +55,8 @@ Interact with catalogs in VR
 
 Create stats and save moment maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+iDaVIE-v allows to investigate basic stats of the cube and to create both moment 0 and moment 1 of a data cube. The user can create the moment maps for the entire cube or for a single selected region. In case a mask is available the moment maps thresholds are set by the mask, but they can be changed manually. If no mask is available then the thresholds should be set manually using the options available in the moment map windows. The moment maps can then be saved as png.
+
 .. raw:: html
 
     <video controls loop style="width:100%;height:auto;">
