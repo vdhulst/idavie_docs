@@ -4,7 +4,7 @@ Graphical User Interface
 ========================
 .. note:: This section is under construction. We apologies for the inconvenience. 
 
-iDaVIE-v presents two sets of GUIs: the :literal:`Desktop GUI` which is the one the user will interact with while at the computer/desktop using the keybord and the :literal:`VR GUI` which is the one the user will interact with in the VR environment using the VR controllers. 
+iDaVIE-v presents two tyoes of GUI: the :literal:`Desktop GUI` which is the one the user will interact with while at the computer/desktop using the keybord and the :literal:`VR GUI` which is the one the user will interact with in the VR environment using the VR controllers. 
 
 Desktop GUI
 -----------
@@ -28,7 +28,18 @@ Once the cube is loaded the user can do one or more of the following actions:
 
 #. Check the header of the cube reported in the grey rectangule (in order to check whether the software has interpreted it correctly).
 
-#. Tune the rendering of the cube using the options in the RENDERING tab or check some basics stats of the cube (this can also be done using the Main Menu options in the VR GUI)
+#. Tune the rendering of the cube using the options in the RENDERING tab or check some basics stats of the cube (these can also be done using the Main Menu options in the VR GUI)
+
+   .. raw:: html
+
+        <img src="_static/GUI_thresholds.png"
+             style="width:100%;height:auto;">
+
+   .. raw:: html
+
+        <img src="_static/GUI-stats-histogram.png"
+             style="width:100%;height:auto;">
+     
 
 #. Load a mask file (if any) by pressing the “Browse” button on the “Mask File” line. NOTE: the mask must have the same dimensions of the cube loaded. See below, both the FITS cube and the mask have been selected. Now you are ready to Load and render.
 

@@ -17,11 +17,11 @@ How to use the controllers
 --------------------------
 In this section we provide guidelines on how to use the Oculus controllers as this is our testing scenario. We can provide guidelines upon request on how to use e.g. VIVE controllers instead.
 
-.. note:: When setting up the VR system you can choose which hand is your "primary hand" you will use to delivery commands. Usually righ-handed people will set the right hand to be the primary hand and the left hand to be the secondary hand. The viceversa usually applies to left handed people. In the following we will describe both scenarios and will refer to primary hand and secondary hands in this sense.
+.. Tip:: When setting up the VR system you can choose which hand is your "primary hand" you will use to deliver commands. Usually righ-handed people will set the right hand to be the primary hand and the left hand to be the secondary hand. The viceversa usually applies to left-handed people. In the following we will describe both scenarios and will refer to primary hand and secondary hands in this sense.
 
 .. raw:: html
 
-  <img src="_static/oculus.png"
+  <img src="_static/Oculus.png"
        style="width:100%;height:auto;">
 
 #. **Thumbstick (primary hand)**: it can be used to scroll (up and down) lists (aka catalogs)

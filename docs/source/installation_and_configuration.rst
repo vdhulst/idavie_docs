@@ -2,6 +2,7 @@
 
 Installation and configuration
 ==============================
+.. note:: The current version of the software is in beta testing so please be aware that issues might arise. We also appreciate your collaboration in identifying them and, if you do, please post them in the issue page on `Github <https://github.com/idia-astro/idavie_releases/issues>`_. All issues will be fixed for the first data release. 
 
 Executable
 -----------
@@ -49,11 +50,9 @@ In this section we share some useful tips where we found a solution to a known i
 
 Known issues
 ------------
-.. note:: The current version of the software is in beta testing so please be aware that issues might arise. We also appreciate your collaboration in identifying them and, if you do, please post them in the relevant page on `Github <https://github.com/idia-astro/idavie_releases/issues>`_. All issues will be fixed for the first data release. 
-
 The following are issues we already know about and that will be fixed as soon as possible:
  
 #. In order to paint, a region must be selected and cropped to
-#. The option to paint a new source mask has multiple issues we are aware of. If you encounter problem we suggest you restart iDaVIE-v and you send us your log file.
+#. The option to paint a new source mask has multiple issues we are aware of. If the user encounters problems we suggest to record and send us the log file and restart DaVIE-v.
 #. Problem with virus protection systems. We will make a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning. See more details `here <https://www.symantec.com/connect/forums/how-avoid-wsreputation1-error>`_
 
