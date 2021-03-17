@@ -6,7 +6,7 @@ Installation and configuration
 
 Executable
 -----------
-Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided iDAVIE-v.zip, which contains the executable .exe (and other reference files). 
+Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDAVIE-v_v.0-beta.0.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/idavie_releases/releases/download/v1.0-beta.0/iDaVIE-v_v1.0-beta.0.zip>`_ 
 
 .. raw:: html
 
@@ -53,6 +53,5 @@ Known issues
 The following are issues we already know about and that will be fixed as soon as possible:
  
 #. In order to paint, a region must be selected and cropped to
-#. The option to paint a new source mask has multiple issues we are aware of. If the user encounters problems we suggest to record and send us the log file and restart DaVIE-v.
 #. Problem with virus protection systems. We will make a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning. See more details `here <https://www.symantec.com/connect/forums/how-avoid-wsreputation1-error>`_
 

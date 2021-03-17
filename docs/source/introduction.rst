@@ -29,7 +29,7 @@ Contributors
 ------------
 The development of the iDaVIE-v project is a joint effort from:
 
-* `The Inter-university Institute for Data Intensive Astronomy (IDIA) <https://idia.ac.za>`_
+* `The Inter-university Institute for Data Intensive Astronomy (IDIA) <https://www.idia.ac.za>`_
 * `The IDIA Visualisation Lab <https://vislab.idia.ac.za>`_
 * `Osservatorio Astronomico di Catania, Istituto Nazionale di Astrofisica (INAF-OACT) <https://www.oact.inaf.it>`_
 * `Osservatorio Astronomico di Cagliari, Istituto Nazionale di Astrofisica (INAF-OACA) <http://www.oa-cagliari.inaf.it/>`_
@@ -38,7 +38,8 @@ Software citation
 -----------------
 Please use the following DOI as a citation when using iDavie-v for publications.
 
-TBD
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4614116.svg
+   :target: https://doi.org/10.5281/zenodo.4614116
 
 Other relevant references are:
 
