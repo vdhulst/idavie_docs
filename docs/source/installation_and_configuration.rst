@@ -29,6 +29,7 @@ Known issues
 ------------
 The following are issues we already know about and that will be fixed as soon as possible:
 
-- problem with mask 
+- problem with mask
+- problem with selection box 
 - In order to paint, a region must be selected and cropped to
 - we will make a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning. See more details `here <https://www.symantec.com/connect/forums/how-avoid-wsreputation1-error>`_

@@ -16,7 +16,8 @@ Any VR headset compatible with SteamVR should function. The following VR headset
 * HTC Vive
 * HTC Vive Pro
 * Valve Index
-* Samsung Odyssey
+* Samsung Odysse
+
 In the IVL we use the Valve Index (with wall-mounted sensors), while on the road we use Alienware gpu-powered laptops and the Oculus Rift S. 
 
 Software
