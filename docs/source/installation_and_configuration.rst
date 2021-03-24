@@ -44,7 +44,7 @@ In this section we share some useful tips where we found a solution to a known i
 
   #. post and issue on the Github repository
   
-  #. make contact with us and send us the log files along with your bug reports. The log files can be found in the directory :literal:`%appdata%/../LocalLow/DefaultCompany/iDaVIE-v`. In order to find this directory using Windows please press :literal:`WIN + R` to open the run dialog, and paste the path directory in to open the folder). 
+  #. make contact with us and send us the log files along with your bug reports. The log files can be found in the directory :literal:`%appdata%/../LocalLow/IDIA/iDaVIE-v`. In order to find this directory using Windows please press :literal:`WIN + R` to open the run dialog, and paste the path directory in to open the folder). 
   
 .. WARNING:: Unity only allows for two log file to be stored so, if a problem is encountered is best to go and look for the log file **BEFORE** starting a new iDaVIE-v session otherwise the log file reporting the specific problem encountered can be lost. 
 
