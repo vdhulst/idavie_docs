@@ -11,7 +11,7 @@ IDaVIE-v: immersive Data Visualisation Interactive Explorer for volumentric rend
 
 .. toctree::
    :maxdepth: 3
-   :caption: iDaVIE-v user manual v1.0-beta.0
+   :caption: iDaVIE-v user manual
 
    introduction.rst
    requirements.rst

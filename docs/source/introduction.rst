@@ -4,7 +4,7 @@ Introduction
 
 The mission of iDaVIE-v
 -----------------------
-iDaVIE-v is part of the iDaVIE software suite which is under development at `IDIA <https://www.idia.ac.za>`_. The DaVIE-v application has been developed in collaboration with `INAF-OACT <https://www.oact.inaf.it>`_ . The specific goal of iDaVIE-v is to enable the interrogation of data cubes using Virtual Reality Technology. For more details about the iDaVIE software suite development and all its aspects please refere to `Jarrett et al. 2021 <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_.
+iDaVIE-v is part of the iDaVIE software suite which is under development at `IDIA <https://www.idia.ac.za>`_. The DaVIE-v application has been developed in collaboration with `INAF-OACT <https://www.oact.inaf.it>`_ . The specific goal of iDaVIE-v is to enable the interrogation of data cubes using Virtual Reality Technology. For more details about the iDaVIE software suite development and all its aspects please refere to `Jarrett et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_.
 
 Codebase and releases
 ---------------------
@@ -14,7 +14,8 @@ Installation guides are provided in the section :ref:`installation_configuration
 
 The release plan and major goals are the following:
 
-* v1.0-Beta.0: complete software only in executable format (**v1.0-Beta.0 is the current release**; released 18th March 2021)
+* v1.0-Beta.0: complete software only in executable format (released on 18th March 2021)
+* v1.0-Beta.1 - **current release**: fixed deployment DLL bug (released on 29th March 2021)
 * v1.0: complete software and source code (release date TBC)
 
 Getting help
@@ -43,8 +44,9 @@ Please use the following DOI as a citation when using iDavie-v for publications.
 
 Other relevant references are:
 
-* "Exploring and Interrogating Astrophysical Data in Virtual Reality", `Jarrett et al. 2021 <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_
-* "iDaVIE-v: immersive Data Visualisation Interactive Explorer for volumetric rendering", `Marchetti et al. 2021 <https://ui.adsabs.harvard.edu/abs/2020arXiv201211553M/abstract>`_
+* "Exploring and Interrogating Astrophysical Data in Virtual Reality", `Jarrett et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_
+* "iDaVIE-v: immersive Data Visualisation Interactive Explorer for volumetric rendering", `Marchetti et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201211553M/abstract>`_
+* "Virtual Reality and Immersive Collaborative Environments: the New Frontier for Big Data Visualisation", `Sivitilli et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2021arXiv210314397S/abstract>`_
 
 Acknowledgements
 ----------------

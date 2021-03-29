@@ -6,7 +6,7 @@ Installation and configuration
 
 Executable
 -----------
-Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDAVIE-v_v.0-beta.0.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/idavie_releases/releases/download/v1.0-beta.0/iDaVIE-v_v1.0-beta.0.zip>`_ 
+Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDAVIE-v_v.0-beta.1.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/idavie_releases/releases/download/v1.0-beta.1/iDaVIE-v_v1.0-beta.1.zip>`_ 
 
 .. raw:: html
 
@@ -46,7 +46,7 @@ In this section we share some useful tips where we found a solution to a known i
   
   #. make contact with us and send us the log files along with your bug reports. The log files can be found in the directory :literal:`%appdata%/../LocalLow/IDIA/iDaVIE-v`. In order to find this directory using Windows please press :literal:`WIN + R` to open the run dialog, and paste the path directory in to open the folder). 
   
-.. WARNING:: Unity only allows for two log file to be stored so, if a problem is encountered is best to go and look for the log file **BEFORE** starting a new iDaVIE-v session otherwise the log file reporting the specific problem encountered can be lost. 
+.. WARNING:: Unity only allows for a maximum of two log files to be stored. Therefore, if a problem is encountered with iDaVIE-v is best to copy the log file to a different folder **BEFORE** starting a new iDaVIE-v session otherwise the log file reporting the specific problem encountered will be lost.
 
 Known issues
 ------------
@@ -54,4 +54,5 @@ The following are issues we already know about and that will be fixed as soon as
  
 #. In order to paint, a region must be selected and cropped to
 #. Problem with virus protection systems. We will make a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning. See more details `here <https://www.symantec.com/connect/forums/how-avoid-wsreputation1-error>`_
+#. A DLL deployment bug has been found in v1.0-beta.0 and has been fixed in v1.0-beta.1. We refere the user to this latest version to solve this issue.
 
