@@ -6,7 +6,7 @@ Installation and configuration
 
 Executable
 -----------
-Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDAVIE-v_v.0-beta.1.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/idavie_releases/releases/download/v1.0-beta.1/iDaVIE-v_v1.0-beta.1.zip>`_ 
+Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDAVIE-v_v.0-beta.2.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/idavie_releases/releases/download/v1.0-beta.1/iDaVIE-v_v1.0-beta.2.zip>`_ 
 
 .. raw:: html
 
@@ -55,4 +55,5 @@ The following are issues we already know about and that will be fixed as soon as
 #. In order to paint, a region must be selected and cropped to
 #. Problem with virus protection systems. We will make a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning. See more details `here <https://www.symantec.com/connect/forums/how-avoid-wsreputation1-error>`_
 #. A DLL deployment bug has been found in v1.0-beta.0 and has been fixed in v1.0-beta.1. We refere the user to this latest version to solve this issue.
+#. Issues loading frequency-based cubes have beeen fixed in v1.0-beta.2
 
