@@ -16,7 +16,8 @@ The release plan and major goals are the following:
 
 * v1.0-Beta.0: complete software only in executable format (released on 18th March 2021)
 * v1.0-Beta.1: fixed deployment DLL bug (released on 29th March 2021
-* **v1.0-Beta.2 (current release)**: fixed loading frequency-based cubes issue (released on 10th April 2021)
+* v1.0-Beta.2: fixed loading frequency-based cubes issue (released on 10th April 2021)
+* **v1.0-Beta.3 (current release)**: added ability to load and interact with large catalgoue (released on 7th July 2021)
 * v1.0: complete software and source code (release date TBC)
 
 Getting help
