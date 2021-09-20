@@ -31,6 +31,11 @@
             "minimum": 16,
             "maximum": 2048,
             "default": 384
+        },
+        "voiceCommandConfidenceLevel": {
+            "description": "Confidience level threshold to use when recognising voice commands.",
+            "enum": ["High", "Medium", "Low", "Rejected"],
+            "default": "Low"
         }
     }
 }
