@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "iDaVIE config",
+    "description": "Schema for iDaVIE config files (Version 1)",
+    "$id": "idavie_config_1",    
+    "properties": {
+        "maxModeDownsampling": {
+            "description": "Use maximum-mode downsampling when reducing cube size before uploading to the GPU.",
+            "type": "boolean",
+            "default": false
+        },
+        "foveatedRendering": {
+            "description": "Use foveated rendering to improve rendering performance at the expense of image quality in the periphery.",
+            "type": "boolean",
+            "default": true
+        },
+        "bilinearFiltering": {
+            "description": "Use bilinear filtering when sampling from the data texture on the GPU. Smooths cube appearance at the expense of performance.",
+            "type": "boolean",
+            "default": false
+        },
+        "gpuMemoryLimitMb": {
+            "description": "Maximum size (in megabytes) of cubes uploaded to the GPU. Cubes larger than this limit will be downsampled before GPU upload.",
+            "type": "integer",
+            "minimum": 32,
+            "maximum": 2048,
+            "default": 256
+        },
+        "maxRaymarchingSteps": {
+            "description": "Maximum number of raymarching steps to take when rendering the cube. A larger number of steps will improve cube appearance when large cubes are used, at the expense of performance.",
+            "minimum": 16,
+            "maximum": 2048,
+            "default": 384
+        }
+    }
+}
