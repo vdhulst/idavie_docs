@@ -4,7 +4,7 @@
     "description": "Schema for iDaVIE config files (Version 1)",
     "$id": "idavie_config_1",
     "definitions": {
-        "colormap": {
+        "colorMap": {
             "type": "string",
             "enum": [
                 "Accent",
@@ -90,7 +90,7 @@
                 "None"
             ]
         },
-        "scaling": {
+        "scalingType": {
             "type": "string",
             "enum": [
                 "Linear",
@@ -104,15 +104,31 @@
         "renderConfig": {
             "type": "object",
             "properties": {
-                "colormap": {
-                    "$ref": "#/definitions/colormap",
+                "colorMap": {
+                    "$ref": "#/definitions/colorMap",
                     "default": "Plasma"
                 },
-                "scaling": {
-                    "$ref": "#/definitions/scaling",
+                "scalingType": {
+                    "$ref": "#/definitions/scalingType",
                     "default": "Linear"
                 }
             }
+        },
+        "limitType": {
+            "type": "string",
+            "enum": [
+                "ZScale",
+                "MinMax"
+            ],
+            "default": "ZScale"
+        },
+        "thresholdType": {
+            "type": "string",
+            "enum": [
+                "Mask",
+                "Threshold"
+            ],
+            "default": "Mask"
         }
     },
     "properties": {
@@ -158,31 +174,44 @@
         "defaultScalingType": {
             "description": "Default scaling type to use apply when loading a new cube.",
             "type": "string",
-            "$ref": "#/definitions/scaling"
+            "$ref": "#/definitions/scalingType"
         },
         "defaultColorMap": {
             "description": "Default color map to apply when loading a new cube.",
-            "$ref": "#/definitions/colormap",
+            "$ref": "#/definitions/colorMap",
             "default": "Inferno"
         },
         "momentMaps": {
             "type": "object",
             "description": "Moment map configuration",
             "properties": {
+                "defaultLimitType": {
+                    "description": "Default limit type to use when rendering moment maps",
+                    "$ref": "#/definitions/limitType"
+                },
+                "defaultThresholdType": {
+                    "description": "Default threshold type to use when calculating moment maps",
+                    "$ref": "#/definitions/thresholdType"
+                },
+                "defaultThreshold": {
+                    "description": "Default threshold value to use when calculating moment maps with a threshold type",
+                    "type": "number",
+                    "default": 0
+                },
                 "m0": {
                     "description": "Render configuration for M0",
                     "$ref": "#/definitions/renderConfig",
                     "default": {
-                        "colormap": "Plasma",
-                        "scaling": "Sqrt"
+                        "colorMap": "Plasma",
+                        "scalingType": "Sqrt"
                     }
                 },
                 "m1": {
                     "description": "Render configuration for M0",
                     "$ref": "#/definitions/renderConfig",
                     "default": {
-                        "colormap": "Turbo",
-                        "scaling": "Linear"
+                        "colorMap": "Turbo",
+                        "scalingType": "Linear"
                     }
                 }
             }
