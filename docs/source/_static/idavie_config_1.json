@@ -169,11 +169,19 @@
             "properties": {
                 "m0": {
                     "description": "Render configuration for M0",
-                    "$ref": "#/definitions/renderConfig"
+                    "$ref": "#/definitions/renderConfig",
+                    "default": {
+                        "colormap": "Plasma",
+                        "scaling": "Sqrt"
+                    }
                 },
                 "m1": {
                     "description": "Render configuration for M0",
-                    "$ref": "#/definitions/renderConfig"
+                    "$ref": "#/definitions/renderConfig",
+                    "default": {
+                        "colormap": "Turbo",
+                        "scaling": "Linear"
+                    }
                 }
             }
         }
