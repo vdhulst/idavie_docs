@@ -105,10 +105,12 @@
             "type": "object",
             "properties": {
                 "colormap": {
-                    "$ref": "#/definitions/colormap"
+                    "$ref": "#/definitions/colormap",
+                    "default": "Plasma"
                 },
                 "scaling": {
-                    "$ref": "#/definitions/scaling"
+                    "$ref": "#/definitions/scaling",
+                    "default": "Linear"
                 }
             }
         }
