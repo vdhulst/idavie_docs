@@ -135,7 +135,7 @@
         "maxModeDownsampling": {
             "description": "Use maximum-mode downsampling when reducing cube size before uploading to the GPU.",
             "type": "boolean",
-            "default": false
+            "default": true
         },
         "foveatedRendering": {
             "description": "Use foveated rendering to improve rendering performance at the expense of image quality in the periphery.",
@@ -152,7 +152,7 @@
             "type": "integer",
             "minimum": 32,
             "maximum": 2048,
-            "default": 256
+            "default": 384
         },
         "maxRaymarchingSteps": {
             "description": "Maximum number of raymarching steps to take when rendering the cube. A larger number of steps will improve cube appearance when large cubes are used, at the expense of performance.",
