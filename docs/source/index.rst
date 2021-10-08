@@ -6,7 +6,7 @@
 iDaVIE-v: immersive Data Visualisation Interactive Explorer for volumetric rendering 
 =====================================================================================
 
-.. index:: Table of Content
+.. index:: Table of Contents
 
 
 .. toctree::
