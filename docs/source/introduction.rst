@@ -18,7 +18,8 @@ The release plan and major goals are the following:
 * v1.0-Beta.1: fixed deployment DLL bug (released on 29th March 2021
 * v1.0-Beta.2: fixed loading frequency-based cubes issue (released on 10th April 2021)
 * v1.0-Beta.3: added ability to load and interact with large catalgoue (released on 7th July 2021)
-* **v1.0-Beta.5 (current release)**: added ability to export sub-cubes and edit settings using a JSON config file (released on 8th October 2021)
+* v1.0-Beta.5: added ability to export sub-cubes and edit settings using a JSON config file (released on 8th October 2021)
+* **v1.0-Beta.6 (current release)**: added ability to load new cubes without exiting iDaVIE; Updated file browser to use system-default browser; added toaster notifications for information, warnings and errors  (released 18th February 2022)
 * v1.0: complete software and source code (release date TBC)
 
 Getting help
@@ -66,4 +67,4 @@ iDaVIE-v is mainly built using the Unity game engine and with the following thir
 
 Copyright and License
 ---------------------
-Copyright (C) 2021 IDIA, INAF-OACT. This program is free software; you can redistribute it and/or modify it under the terms of the `GNU General Public License version 3 <http://www.gnu.org/copyleft/gpl.html>`_ as published by the Free Software Foundation.
+Copyright (C) 2022 IDIA, INAF-OACT. This program is free software; you can redistribute it and/or modify it under the terms of the `GNU General Public License version 3 <http://www.gnu.org/copyleft/gpl.html>`_ as published by the Free Software Foundation.
