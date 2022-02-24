@@ -72,7 +72,7 @@ In VR the use of the controllers can become tricky so we have implemented a seri
      - (DEAFULT) voxel values are displaied in linear scale
    * - "log scale"
      - voxel values are displaied in log scale
-   * - "sqaure root scale"
+   * - "square root scale"
      - voxel values are displaied in sqaure root scale 
    * - **Changing cube size scaling**
      -
