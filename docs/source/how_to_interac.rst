@@ -72,11 +72,11 @@ In VR the use of the controllers can become tricky so we have implemented a seri
      - (DEAFULT) voxel values are displaied in linear scale
    * - "log scale"
      - voxel values are displaied in log scale
-   * - "sqaure root scale"
+   * - "square root scale"
      - voxel values are displaied in sqaure root scale 
    * - **Changing cube size scaling**
      -
-   * - "edit zee axis" or "eit zed Axis"
+   * - "edit zee axis" or "edit zed Axis"
      - to edit the z-axis of the cube (e.g. to compress the cube to a single layer or strech it). NOTE: by doing this action no beam convolution is taken into account. We assume that every channel has the same beam size. Only in the Beta release there will be the opportunity to create a moment-0 map of the cube.and thus a proper convolution will be done (if different channels have different beams).
    * - "save zee axis" or "save zed Axis"
      - to save the new z axis scale 
