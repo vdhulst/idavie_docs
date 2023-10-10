@@ -22,7 +22,8 @@ The release plan and major goals are the following:
 * v1.0-Beta.6: added ability to load new cubes without exiting iDaVIE; Updated file browser to use system-default browser; added toaster notifications for information, warnings and errors  (released 18th February 2022)
 * v1.0-Beta.7: fixed memory leak, fixed behaviour of edited masks when viewing downsampled cubes, added ability to paint small cubes without cropping (released 20 July 2022)
 * v1.0-Beta.8: added physical units to Vsys and W20 calculations, added colorbar to moment maps, fixed cube shape bug in desktop GUI, removed colormap toast notifications (released 10 January 2023)
-* **v1.0-Beta.9 (current release)**: upgraded Unity version to latest LTS 2021, upgraded SteamVR plug-in to latest 2.7.3 (released 2 February 2023)
+* v1.0-Beta.9: upgraded Unity version to latest LTS 2021, upgraded SteamVR plug-in to latest 2.7.3 (released 2 February 2023)
+* **v1.0-Beta.10 (current release)**: Optimized the "reset crop" action, options were added to config for tunneling vignette, Debug messages added as a tab to the desktop GUI,  added compatibility for more z-axis units, fixed bug that was causing duplicate masks or sub-cubes to be exported when using the quickmenu (released 10 October 2023)
 * v1.0: complete software and source code (release date TBC)
 
 Getting help
