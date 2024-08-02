@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-iDaVIE-v: immersive Data Visualisation Interactive Explorer for volumetric rendering 
+iDaVIE: immersive Data Visualisation Interactive Explorer for volumetric rendering 
 =====================================================================================
 
 .. index:: Table of Contents
@@ -11,9 +11,11 @@ iDaVIE-v: immersive Data Visualisation Interactive Explorer for volumetric rende
 
 .. toctree::
    :maxdepth: 3
-   :caption: iDaVIE-v user manual
+   :caption: iDaVIE user manual
 
    introduction.rst
+   contribute.md
+   build.rst
    requirements.rst
    installation_and_configuration.rst
    inputs_outputs.rst
