@@ -2,42 +2,28 @@ Introduction
 ============
 .. note:: The current version of the software is in beta testing so please be aware that issues might arise. We also appreciate your collaboration in identifying them and, if you do, please post them in the issues page on `Github <https://github.com/idia-astro/idavie_releases/issues>`_. All issues will be fixed for the first data release. 
 
-The mission of iDaVIE-v
+The mission of iDaVIE
 -----------------------
-iDaVIE-v is part of the iDaVIE software suite which is under development at `IDIA <https://www.idia.ac.za>`_. The DaVIE-v application has been developed in collaboration with `INAF-OACT <https://www.oact.inaf.it>`_ . The specific goal of iDaVIE-v is to enable the interrogation of data cubes using Virtual Reality Technology. For more details about the iDaVIE software suite development and all its aspects please refere to `Jarrett et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_.
+iDaVIE is part of the iDaVIE software suite which is under development at `IDIA <https://www.idia.ac.za>`_. The DaVIE-v application has been developed in collaboration with `INAF-OACT <https://www.oact.inaf.it>`_ . The specific goal of iDaVIE is to enable the interrogation of data cubes using Virtual Reality Technology. For more details about the iDaVIE software suite development and all its aspects please refere to `Jarrett et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_.
 
 Codebase and releases
 ---------------------
-iDavIE-v is an open-source project. Its source code will be made available after the Beta testing is concluded. 
+iDavIE-v is an open-source project. Its source code is available on the project's GitHub `repository <https://github.com/idia-astro/iDaVIE/>`_. 
 
-Installation guides are provided in the section :ref:`installation_configuration`, including the installation of the needed VR environment.
+Installation guides are provided in the section :ref:`installation_configuration`, including the installation of the required VR environment.
 
-The release plan and major goals are the following:
-
-* v1.0-Beta.0: complete software only in executable format (released on 18th March 2021)
-* v1.0-Beta.1: fixed deployment DLL bug (released on 29th March 2021)
-* v1.0-Beta.2: fixed loading frequency-based cubes issue (released on 10th April 2021)
-* v1.0-Beta.3: added ability to load and interact with large catalgoue (released on 7th July 2021)
-* v1.0-Beta.5: added ability to export sub-cubes and edit settings using a JSON config file (released on 8th October 2021)
-* v1.0-Beta.6: added ability to load new cubes without exiting iDaVIE; Updated file browser to use system-default browser; added toaster notifications for information, warnings and errors  (released 18th February 2022)
-* v1.0-Beta.7: fixed memory leak, fixed behaviour of edited masks when viewing downsampled cubes, added ability to paint small cubes without cropping (released 20 July 2022)
-* v1.0-Beta.8: added physical units to Vsys and W20 calculations, added colorbar to moment maps, fixed cube shape bug in desktop GUI, removed colormap toast notifications (released 10 January 2023)
-* v1.0-Beta.9: upgraded Unity version to latest LTS 2021, upgraded SteamVR plug-in to latest 2.7.3 (released 2 February 2023)
-* v1.0-Beta.10: Optimized the "reset crop" action, options were added to config for tunneling vignette, Debug messages added as a tab to the desktop GUI,  added compatibility for more z-axis units, fixed bug that was causing duplicate masks or sub-cubes to be exported when using the quickmenu (released 10 October 2023)
-* **v1.0-Beta.11 (current release)**: various bug fixes and features added, including loading bar, flagging ability, and cropping optimization (released on 6th of December 2023)
-* v1.0: complete software and source code (release date TBC)
+If you want to build iDaVIE from source, please see :ref:`build`.
 
 Getting help
 ------------
-The iDaVIE team welcomes any suggestion, feature request, or bug report, to make iDaVIE-v better via 
+The iDaVIE team welcomes any suggestion, feature request, or bug report to make iDaVIE better via:
 
-* Recommended: `Github Issue <https://github.com/idia-astro/idavie_releases/issues>`_
-* Only if necessary: `IDIA vislab help <vislab@idia.ac.za>`_ (vislab@idia.ac.za) 
-
+* Recommended: `GitHub Issues <https://github.com/idia-astro/iDaVIE/issues>`_
+* Only if necessary: `IDIA vislab help <vislab@idia.ac.za>`_ (vislab@idia.ac.za)
 
 Contributors
 ------------
-The development of the iDaVIE-v project is a joint effort from:
+The development of the iDaVIE project is a joint effort from:
 
 * `The Inter-university Institute for Data Intensive Astronomy (IDIA) <https://www.idia.ac.za>`_
 * `The IDIA Visualisation Lab <https://vislab.idia.ac.za>`_
@@ -46,7 +32,7 @@ The development of the iDaVIE-v project is a joint effort from:
 
 Software citation
 -----------------
-Please use the following DOI as a citation when using iDavie-v for publications.
+Please use the following DOI as a citation when using iDaVIE for publications.
 
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4614116.svg
    :target: https://doi.org/10.5281/zenodo.4614116
@@ -54,7 +40,7 @@ Please use the following DOI as a citation when using iDavie-v for publications.
 Other relevant references are:
 
 * "Exploring and Interrogating Astrophysical Data in Virtual Reality", `Jarrett et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_
-* "iDaVIE-v: immersive Data Visualisation Interactive Explorer for volumetric rendering", `Marchetti et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201211553M/abstract>`_
+* "iDaVIE: immersive Data Visualisation Interactive Explorer for volumetric rendering", `Marchetti et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201211553M/abstract>`_
 * "Virtual Reality and Immersive Collaborative Environments: the New Frontier for Big Data Visualisation", `Sivitilli et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2021arXiv210314397S/abstract>`_
 
 Acknowledgements
@@ -65,11 +51,11 @@ Acknowledgements
 
 * This project received support from the Italian Ministry of Foreign Affairs and International Cooperation (MAECI Grant Number ZA18GR02) and the South African NRF (Grant Number 113121) as part of the ISARP RADIOSKY2020 Joint Research Scheme
 
-iDaVIE-v is mainly built using the Unity game engine and with the following third-party libraries:
+iDaVIE is mainly built using the Unity game engine and with the following third-party libraries:
 
 * SteamVR
 * CFITSIO
 
 Copyright and License
 ---------------------
-Copyright (C) 2022 IDIA, INAF-OACT. This program is free software; you can redistribute it and/or modify it under the terms of the `GNU General Public License version 3 <http://www.gnu.org/copyleft/gpl.html>`_ as published by the Free Software Foundation.
+Copyright (C) 2024 IDIA, INAF-OACT. This program is free software; you can redistribute it and/or modify it under the terms of the `GNU Lesser General Public License (LGPL) version 3 <https://github.com/idia-astro/iDaVIE/blob/main/LICENSE.md>`_ as published by the Free Software Foundation.
