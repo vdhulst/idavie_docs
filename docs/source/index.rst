@@ -14,10 +14,10 @@ iDaVIE: immersive Data Visualisation Interactive Explorer for volumetric renderi
    :caption: iDaVIE user manual
 
    introduction.rst
-   contribute.md
-   build.rst
    requirements.rst
    installation_and_configuration.rst
+   contribute.md
+   build.rst
    inputs_outputs.rst
    gui.rst
    how_to_interac.rst
