@@ -5,24 +5,25 @@ Building i-DaVIE-v from source
 As a Unity project, there are several steps to follow to compile i-DaVIE-v from source.
 
 Unfortunately, due to the limitations on VR headset drivers on Unix operating systems, we can only support Windows at the moment. We keep a close eye on developments in the VR space and will support Unix as soon as it becomes feasible.
+
 Prerequisites
 -------------
 #. Install Unity
-    * Download `Unity Hub for Windows <https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe>` from Unity's website and install it.
-    * From the Unity Hub, install Unity version 2021.3.xf1, where x is the highest number available.
+    * Download `Unity Hub for Windows <https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe>`_ from Unity's website and install it.
+    * From the Unity Hub, install Unity version :literal:`2021.3.xf1`, where :literal:`x` is the highest number available.
 
 #. Install CMake
-    * Download `CMake for Windows <https://cmake.org/download/>` and install it.
+    * Download `CMake for Windows <https://cmake.org/download/>`_ and install it.
     * Make sure you can run :literal:`cmake` from the PowerShell terminal (or command line).
-        - `cmake --version` is a good test.
+        - :literal:`cmake --version` is a good test.
 
 #. Install vcpkg
-    * Download `vcpkg <https://github.com/microsoft/vcpkg>` and install it.
-    * Make sure to note the path to the vcpkg root folder, found at :literal:`C:\vcpkg` for default installations.
+    * Download `vcpkg <https://github.com/microsoft/vcpkg>`_ and install it.
+    * Make sure to note the path to the vcpkg root folder, found at :literal:`C:\\\\vcpkg` for default installations.
 
 #. Download i-DaVIE-v source code
-    * Download the i-DaVIE-v source code from the `GitHub repository <https://github.com/idia-astro/idia_unity_vr>`.
-    * (Optional) You can do this through a Git client, such as `GitHub Desktop <https://desktop.github.com/download/>` or `Git Extensions <https://github.com/gitextensions/gitextensions/releases/latest>`.
+    * Download the i-DaVIE-v source code from the `GitHub repository <https://github.com/idia-astro/idia_unity_vr>`_.
+    * (Optional) You can do this through a Git client, such as `GitHub Desktop <https://desktop.github.com/download/>`_ or `Git Extensions <https://github.com/gitextensions/gitextensions/releases/latest>`_.
 
 #. Run the configuration script
     * Open a PowerShell terminal in the i-DaVIE-v root folder
