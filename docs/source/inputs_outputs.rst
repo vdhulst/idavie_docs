@@ -19,4 +19,4 @@ iDaVIE provides:
 
   * If a mask is loaded and modified in VR then it can be saved either overwriting the original mask **or**  as a copy. In the former case the mask will be saved with the same name of the original mask and in the same directory, in the latter case the suffix :literal:`-copy.fits` will be added to the original mask name and the edited mask will be saved in the same directory as the original mask (e.g. the edited mask file name will then be :literal:`originalmaskname-copy.fits`).
   * If no mask is provided in input, but one is created in iDaVIE, then the created mask is saved in the same directory of the data cube and a suffix :literal:`-mask.fits` will be addedd to the cube name to indicate the maks file (e.g. the created mask file name will then be :literal:`originalcubename-mask.fits`).
-  * Moment maps are saved to :literal:`Moment_map_[0/1]_yyyyMMdd_Hmmss.png`, where :literal:`yyyyMMdd_Hmmss` is the timestamp when the files are saved.
+  * Moment maps are saved to :literal:`Output/MomentMaps/Moment_map_[0/1]_yyyyMMdd_Hmmss.png`, where :literal:`yyyyMMdd_Hmmss` is the timestamp when the files are saved.
