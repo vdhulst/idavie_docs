@@ -59,13 +59,15 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
      -
    * - "colour map plasma"
      - Set the colour map to a preferred one. Options are: plasma, turbo,
-       rainbow, magma, inferno, viridis, cube helix.*
+
+       rainbow, magma, inferno, viridis, cube helix.\*
    * - "reset transform"
-     - Reset the colour mapping to the default colour map (*magma*).
+     - Reset the colour mapping to the default colour map (*inferno*).
    * - **Changing ray marching settings**
      -
    * - "projection maximum"
      - Utilise ray-marching with maximum voxel intensity algorithm.
+
        (**DEFAULT**)
    * - "projection average"
      - Utilise ray-marching with average along line-of-sight algorithm.
@@ -81,10 +83,15 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
      -
    * - "edit zee axis" or "edit zed axis"
      - Edit the z-axis of the cube (i.e., to compress the cube to a single
+
        layer or stretch it). NOTE: No beam convolution is taken into
+
        account when performing this action. We assume that every channel
+
        has the same beam size. Use the moment maps (moment zero and moment
+
        one are available) if you wish to see a proper convolution with
+
        beam sizes taken into account.
    * - "save zee axis" or "save zed axis"
      - Save the new z-axis scale.
@@ -94,21 +101,28 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
      -
    * - "crop selection"
      - After selecting an object or region of interest using the
+
        controllers, this command will crop the region within the box from
+
        the full cube and will render it at full resolution (depending on
+
        the size of the selected region).
+
    * - "reset crop"
      - Return to the full cube view.
    * - **Visualisation of cube masks**
      -
    * - "mask on"
      - Show only those voxels that belong to the mask (requires that a
+
        mask be loaded).
    * - "mask off"
      - Turn off the mask visualisation.
    * - "mask invert"
      - The opposite of mask on; to show anything that is not in a mask or,
+
        in other words, to show the “residuals” (cube - mask cube) -- useful
+
        to find new sources.
    * - "mask isolate"
      - Light up any masked voxels; use to easily see the mask.
@@ -124,6 +138,7 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
      - Set the brush to erase or delete voxels from a mask.
    * - "show mask outline"
      - Show the mask outline as a transparent grid (DEFAULT: the mask outline
+
        will be automatically set when in paint mode) .
    * - "hide mask outline"
      - Hide the mask outline .
