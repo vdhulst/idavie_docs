@@ -86,13 +86,13 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
 
        layer or stretch it). NOTE: No beam convolution is taken into
 
-       account when performing this action. We assume that every channel
+       account when performing this action. We assume that every
 
-       has the same beam size. Use the moment maps (moment zero and
+       channel has the same beam size. Use the moment maps (moment
 
-       moment one are available) if you wish to see a proper convolution
+       zero and moment one are available) if you wish to see a
 
-       with beam sizes taken into account.
+       proper convolution with beam sizes taken into account.
    * - "save zee axis" or "save zed axis"
      - Save the new z-axis scale.
    * - "reset zee axis" or "reset zed axis"
@@ -129,7 +129,9 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - **Painting options**
      - 
    * - "paint mode"
-     - Activate the paint mode where the user can modify or create a mask.
+     - Activate the paint mode where the user can modify or
+
+       create a mask.
    * - "exit paint mode"
      - Exit paint mode.
    * - "brush add"
@@ -139,9 +141,9 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - "show mask outline"
      - Show the mask outline as a transparent grid.
 
-       (**DEFAULT**: the mask outline
+       (**DEFAULT**: the mask outline will be automatically
 
-       will be automatically set when in paint mode) .
+       set when in paint mode) .
    * - "hide mask outline"
      - Hide the mask outline .
    * - "undo"
