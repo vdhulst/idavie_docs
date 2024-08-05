@@ -4,7 +4,7 @@ Introduction
 
 The mission of iDaVIE
 -----------------------
-iDaVIE is part of the iDaVIE software suite which is under development at `IDIA <https://www.idia.ac.za>`_. The DaVIE-v application has been developed in collaboration with `INAF-OACT <https://www.oact.inaf.it>`_ . The specific goal of iDaVIE is to enable the interrogation of data cubes using Virtual Reality Technology. For more details about the iDaVIE software suite development and all its aspects, please refer to `Jarrett et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_.
+iDaVIE is part of the iDaVIE software suite which is under development at `IDIA <https://www.idia.ac.za>`_. The iDaVIE application has been developed in collaboration with `INAF-OACT <https://www.oact.inaf.it>`_ . The specific goal of iDaVIE is to enable the interrogation of 3D data using virtual reality technology. For more details about the iDaVIE software suite development and all its aspects, please refer to `Jarrett et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2020arXiv201210342J/abstract>`_.
 
 Codebase and releases
 ---------------------
