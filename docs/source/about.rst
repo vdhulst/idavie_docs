@@ -2,7 +2,7 @@
 
 About iDaVIE
 ============
-iDaVIE (the **i**mmersive **Da**ta **V**isualisation **I**nteractive **E**xplorer) was conceived by and is being developed under the custody of the IDIA Visualisation Laboratory.  It provides a Virtual Reality experience for data cube exploration. It visualises 3D data in an interaction 'box', a 3D block (or elongated cube) in VR space which allows the user to extract vital feedback information about the enclosed data (including cumulative statistics and historical data).
+iDaVIE (the immersive Data Visualisation Interactive Explorer) was conceived by and is being developed under the custody of the IDIA Visualisation Laboratory.  It provides a Virtual Reality experience for data cube exploration. It visualises 3D data in an interaction 'box', a 3D block (or elongated cube) in VR space which allows the user to extract vital feedback information about the enclosed data (including cumulative statistics and historical data).
 
 Contributors
 ------------
@@ -16,12 +16,12 @@ The development of the iDaVIE project is a joint effort from:
 .. raw:: html
 
     <img src="_static/vislab_logo.png"
-         style="width:100%;height:auto;">
+         style="width:30%;height:auto;">
          
 .. raw:: html
 
     <img src="_static/inaf.png"
-         style="width:100%;height:auto;">
+         style="width:30%;height:auto;">
 
 Software citation
 -----------------
@@ -61,7 +61,7 @@ iDaVIE is mainly built using the `Unity game engine <https://unity.com/>`_ and w
 * `Starlink AST Library <https://github.com/Starlink/ast>`_
 * `World-wide Telescope VOTable <https://github.com/WorldWideTelescope/wwt-windows-client/blob/master/WWTExplorer3d/VOTable.cs>`_
 
-See our `NOTICE <>`_ file for full licence information of the third-party libraries we use.
+See our `NOTICE <https://github.com/idia-astro/iDaVIE/blob/main/NOTICE.md>`_ file for full licence information of the third-party libraries we use.
 
 Copyright and Licence
 ---------------------
