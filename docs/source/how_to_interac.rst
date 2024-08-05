@@ -137,7 +137,9 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - "brush erase"
      - Set the brush to erase or delete voxels from a mask.
    * - "show mask outline"
-     - Show the mask outline as a transparent grid (DEFAULT: the mask outline
+     - Show the mask outline as a transparent grid.
+
+       (**DEFAULT**: the mask outline
 
        will be automatically set when in paint mode) .
    * - "hide mask outline"
@@ -153,8 +155,9 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
 
        specific source ID. With this command, the software will recognize
 
-       the voxels as part of a specific source indicated and not as a new
-       source.
+       the voxels as part of a specific source indicated and not
+
+       as a new source.
    * - **Screenshot options**
      -
    * - "take picture"
