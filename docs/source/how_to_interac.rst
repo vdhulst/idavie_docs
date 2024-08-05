@@ -50,21 +50,23 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - **Changing voxel thresholds**
      -
    * - "Edit min"
-     - Set the minimum threshold (floor) of the voxel intensity mapping
+     - Set the minimum threshold (floor) of the voxel intensity mapping.
    * - "Edit max"
-     - Set the maximum threshold (ceiling) of the voxel intensity mapping
+     - Set the maximum threshold (ceiling) of the voxel intensity mapping.
    * - "Reset threshold"
-     - Reset the thresholding to the default (startup) values
+     - Reset the thresholding to the default (startup) values.
    * - **Changing colour map**
      -
    * - "colour map plasma"
-     - Set the colour map to a preferred one. Options are: plasma, turbo, rainbow, magma, inferno, viridis, cube helix.*
+     - Set the colour map to a preferred one. Options are: plasma, turbo,
+       rainbow, magma, inferno, viridis, cube helix.*
    * - "reset transform"
      - Reset the colour mapping to the default colour map (*magma*).
    * - **Changing ray marching settings**
      -
    * - "projection maximum"
-     - Utilise ray-marching with maximum voxel intensity algorithm. (**DEFAULT**)
+     - Utilise ray-marching with maximum voxel intensity algorithm.
+       (**DEFAULT**)
    * - "projection average"
      - Utilise ray-marching with average along line-of-sight algorithm.
    * - **Changing voxels scale**
@@ -78,7 +80,12 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - **Changing cube size scaling**
      -
    * - "edit zee axis" or "edit zed axis"
-     - Edit the z-axis of the cube (i.e., to compress the cube to a single layer or strech it). NOTE: No beam convolution is taken into account when performing this action. We assume that every channel has the same beam size. Use the moment maps (moment zero and moment one are available) if you wish to see a proper convolution with beam sizes taken into account.
+     - Edit the z-axis of the cube (i.e., to compress the cube to a single
+       layer or stretch it). NOTE: No beam convolution is taken into
+       account when performing this action. We assume that every channel
+       has the same beam size. Use the moment maps (moment zero and moment
+       one are available) if you wish to see a proper convolution with
+       beam sizes taken into account.
    * - "save zee axis" or "save zed axis"
      - Save the new z-axis scale.
    * - "reset zee axis" or "reset zed axis"
@@ -86,17 +93,23 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - **Selecting regions of interest**
      -
    * - "crop selection"
-     - After selecting an object or region of interest using the controllers, this command will crop the region within the box from the full cube and will render it at full resolution (depending on the size of the selected region).
+     - After selecting an object or region of interest using the
+       controllers, this command will crop the region within the box from
+       the full cube and will render it at full resolution (depending on
+       the size of the selected region).
    * - "reset crop"
      - Return to the full cube view.
    * - **Visualisation of cube masks**
      -
    * - "mask on"
-     - Show only those voxels that belong to the mask (requires that a mask be loaded).
+     - Show only those voxels that belong to the mask (requires that a
+       mask be loaded).
    * - "mask off"
      - Turn off the mask visualisation.
    * - "mask invert"
-     - The opposite of mask on; to show anything that is not in a mask or, in other words, to show the “residuals” (cube - mask cube) -- useful to find new sources.
+     - The opposite of mask on; to show anything that is not in a mask or,
+       in other words, to show the “residuals” (cube - mask cube) -- useful
+       to find new sources.
    * - "mask isolate"
      - Light up any masked voxels; use to easily see the mask.
    * - **Painting options**
@@ -110,7 +123,8 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - "brush erase"
      - Set the brush to erase or delete voxels from a mask.
    * - "show mask outline"
-     - Show the mask outline as a transparent grid (DEFAULT: the mask outline will be automatically set when in paint mode) .
+     - Show the mask outline as a transparent grid (DEFAULT: the mask outline
+       will be automatically set when in paint mode) .
    * - "hide mask outline"
      - Hide the mask outline .
    * - "undo"
@@ -120,19 +134,29 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - "add new source"
      - Specify the user is now adding a new source to the mask.
    * - "set source ID"
-     - Set the mask voxels the user is about to paint to the value of a specific source ID. With this command, the software will recognize the voxels as part of a specific source indicated and not as a new source.
+     - Set the mask voxels the user is about to paint to the value of a
+       specific source ID. With this command, the software will recognize
+       the voxels as part of a specific source indicated and not as a new
+       source.
    * - **Screenshot options**
      -
    * - "take picture"
-     - Take a screenshot of what is in front of the user in VR. The screenshot taken will then be automatically saved as a .png file in :literal:`Outputs\Camera\Screenshot_yyyyMMdd_Hmmss.png`, where :literal:`yyyyMMdd_Hmmss` is the current timestamp.
+     - Take a screenshot of what is in front of the user in VR. The
+       screenshot taken will then be automatically saved as a .png file
+       in :literal:`Outputs\Camera\Screenshot_yyyyMMdd_Hmmss.png`, where
+       :literal:`yyyyMMdd_Hmmss` is the current timestamp.
    * - **Catalog actions**
      - 
    * - "teleport"
-     - When a source is selected in a list, this command will teleport the user to the position of the source in the cube
+     - When a source is selected in a list, this command will teleport
+       the user to the position of the source in the cube
    * - **Get cursor information**
      - 
    * - "cursor info"
-     - Visualise any info available for the voxel where the cursor is. Default information are WCS, v_rad, volume value, voxel value in the units of the cube, frequency (if stored in the header), and source ID (if a mask is loaded).
+     - Visualise any info available for the voxel where the cursor is. 
+       Default information are WCS, v_rad, volume value, voxel value in
+       the units of the cube, frequency (if stored in the header), and
+       source ID (if a mask is loaded).
  
 .. note:: * A full list of colour maps is available from the quick menu, the options here are merely those available from voice commands.
 .. WARNING:: We are aware that the voice commands do not work when the user is recording a movie using an external software. In this case the user should use the menu options. See more in the section :ref:`how_to_demos`. 
