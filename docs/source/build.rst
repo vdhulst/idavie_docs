@@ -47,13 +47,13 @@ Prerequisites
   .. raw:: html
 
         <img src="_static/Build_SteamVRInput_1.png"
-             style="width:30%;height:auto;"
+             style="width:60%;height:auto;"
              class="center">
 
   .. raw:: html
 
         <img src="_static/Build_SteamVRInput_2.png"
-             style="width:30%;height:auto;"
+             style="width:35%;height:auto;"
              class="center">
 
 #. Build iDaVIE
@@ -63,18 +63,18 @@ Prerequisites
   .. raw:: html
 
         <img src="_static/Build_Build_1.png"
-             style="width:30%;height:auto;"
+             style="width:65%;height:auto;"
              class="center">
   * Click on the Player Settings button on the bottom left.
   .. raw:: html
 
         <img src="_static/Build_Build_2.png"
-             style="width:30%;height:auto;"
+             style="width:65%;height:auto;"
              class="center">
   * Under XR Plug-in Management (scroll down on the left), make sure that OpenVR Loader is selected in the list of Plug-in Providers.
   .. raw:: html
 
         <img src="_static/Build_Build_3.png"
-             style="width:30%;height:auto;"
+             style="width:65%;height:auto;"
              class="center">
   * Click the **Build** button and select your destination folder.
