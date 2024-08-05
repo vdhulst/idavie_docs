@@ -5,26 +5,30 @@ System requirements
 
 Hardware
 --------
-In order to run the software, a system capable of running SteamVR is required. The system requirements are given on the `SteamVR store page <https://store.steampowered.com/app/250820/SteamVR/>`_. We recommend at least an NVIDIA GTX 1070 or above, or the equivalent AMD GPU.
+In order to run the software, a system capable of running SteamVR is required. The system requirements are given on the `SteamVR store page <https://store.steampowered.com/app/250820/SteamVR/>`_.
 
-A quad-core or higher CPU is recommended. At least 8 GB of RAM is required. However, the size of the data cubes usable will depend heavily on system memory capacity. We recommend 16 GB, or 32 GB to support large data cubes.
+iDaVIE requires at least an NVIDIA GTX 1080, or an AMD RX 5700 XT, or above. For full performance, we recommend an NVIDIA RTX 3080 or AMD RX 6800 XT GPU or newer.
 
-Any VR headset compatible with SteamVR should function. The following VR headsets have been tested:
+A quad-core or higher CPU is recommended. At least 16 GB of RAM is required. However, the size of the data cubes usable will depend heavily on system memory capacity. We recommend 32 GB, or 64 GB to support large data cubes.
 
-* Meta Rift
-* Meta Rift S
-* Meta Quest 2
+Any VR headset compatible with SteamVR should function. The following VR headsets are recommended (**tested**):
+
+* **Meta Rift S**
+* **Meta Quest 2**
+* **Meta Quest 3**
 * HTC Vive
 * HTC Vive Pro
 * Valve Index
 * Samsung Odyssey
 
-.. Tip:: In the IDIA Visualisation Lab we use the Valve Index (with wall-mounted sensors), while on the road we use Alienware gpu-powered laptops and the Meta Rift S. 
+.. Note:: All of these headsets should work, but you might have to change the control bindings in the SteamVR interface.
+
+.. Tip:: In the IDIA Visualisation Lab we use the Meta Quest 2 and the Meta Rift S headsets, with a dedicated machine in the lab and GPU-powered laptops while on the road. 
 
 Software
 --------
 In order to run iDaVIE-v the following software needs to be installed:
 
 #. Windows 10 (version 1903 or newer) is required.
-#. The SteamVR runtime is required. Note t  hat in order to start SteamVR, some headsets (e.g. Meta headsets) require additional software to be installed. Instruction should be provided on the headsets webpage.
+#. The SteamVR runtime is required. Note that in order to start SteamVR, some headsets (e.g., Meta headsets) require additional software to be installed. Instructions should be provided on the headsets webpage.
 #. The latest 64-bit (X64) `Visual C++ redistributable <https://aka.ms/vs/17/release/vc_redist.x64.exe>`_ needs to be installed.
