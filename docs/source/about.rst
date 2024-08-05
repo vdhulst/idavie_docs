@@ -16,12 +16,14 @@ The development of the iDaVIE project is a joint effort from:
 .. raw:: html
 
     <img src="_static/vislab_logo.png"
-         style="width:30%;height:auto;">
+         style="width:30%;height:auto;"
+         class="center">
          
 .. raw:: html
 
     <img src="_static/inaf.png"
-         style="width:30%;height:auto;">
+         style="width:30%;height:auto;"
+         class="center">
 
 Software citation
 -----------------
