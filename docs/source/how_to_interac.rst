@@ -88,11 +88,11 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
 
        account when performing this action. We assume that every channel
 
-       has the same beam size. Use the moment maps (moment zero and moment
+       has the same beam size. Use the moment maps (moment zero and
 
-       one are available) if you wish to see a proper convolution with
+       moment one are available) if you wish to see a proper convolution
 
-       beam sizes taken into account.
+       with beam sizes taken into account.
    * - "save zee axis" or "save zed axis"
      - Save the new z-axis scale.
    * - "reset zee axis" or "reset zed axis"
@@ -150,27 +150,36 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
      - Specify the user is now adding a new source to the mask.
    * - "set source ID"
      - Set the mask voxels the user is about to paint to the value of a
+
        specific source ID. With this command, the software will recognize
+
        the voxels as part of a specific source indicated and not as a new
        source.
    * - **Screenshot options**
      -
    * - "take picture"
      - Take a screenshot of what is in front of the user in VR. The
+
        screenshot taken will then be automatically saved as a .png file
+
        in :literal:`Outputs\Camera\Screenshot_yyyyMMdd_Hmmss.png`, where
+
        :literal:`yyyyMMdd_Hmmss` is the current timestamp.
    * - **Catalog actions**
      - 
    * - "teleport"
      - When a source is selected in a list, this command will teleport
+
        the user to the position of the source in the cube
    * - **Get cursor information**
      - 
    * - "cursor info"
      - Visualise any info available for the voxel where the cursor is. 
-       Default information are WCS, v_rad, volume value, voxel value in
+
+       Default information is WCS, v_rad, volume value, voxel value in
+
        the units of the cube, frequency (if stored in the header), and
+
        source ID (if a mask is loaded).
  
 .. note:: * A full list of colour maps is available from the quick menu, the options here are merely those available from voice commands.
