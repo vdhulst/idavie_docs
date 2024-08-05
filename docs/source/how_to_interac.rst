@@ -90,9 +90,9 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
 
        channel has the same beam size. Use the moment maps (moment
 
-       zero and moment one are available) if you wish to see a
+       zero and moment one are available) if you wish to see a proper
 
-       proper convolution with beam sizes taken into account.
+       convolution with beam sizes taken into account.
    * - "save zee axis" or "save zed axis"
      - Save the new z-axis scale.
    * - "reset zee axis" or "reset zed axis"
@@ -119,11 +119,11 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - "mask off"
      - Turn off the mask visualisation.
    * - "mask invert"
-     - The opposite of mask on; to show anything that is not in a mask or,
+     - The opposite of mask on; to show anything that is not in a mask,
 
-       in other words, to show the “residuals” (cube - mask cube) -- useful
+       or, in other words, to show the “residuals” (cube - mask cube)
 
-       to find new sources.
+       -- useful to find new sources.
    * - "mask isolate"
      - Light up any masked voxels; use to easily see the mask.
    * - **Painting options**
@@ -157,9 +157,9 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
 
        specific source ID. With this command, the software will recognize
 
-       the voxels as part of a specific source indicated and not
+       the voxels as part of a specific source indicated and not as a
 
-       as a new source.
+       new source.
    * - **Screenshot options**
      -
    * - "take picture"
