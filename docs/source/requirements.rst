@@ -30,5 +30,5 @@ Software
 In order to run iDaVIE-v the following software needs to be installed:
 
 #. Windows 10 (version 1903 or newer) is required.
-#. The SteamVR runtime is required. Note that in order to start SteamVR, some headsets (e.g., Meta headsets) require additional software to be installed. Instructions should be provided on the headsets webpage.
+#. The SteamVR runtime is required. Note that in order to start SteamVR, some headsets (e.g., Meta headsets) require additional software to be installed. Instructions should be provided with the headset's webpage.
 #. The latest 64-bit (X64) `Visual C++ redistributable <https://aka.ms/vs/17/release/vc_redist.x64.exe>`_ needs to be installed.
