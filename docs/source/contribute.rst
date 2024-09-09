@@ -5,6 +5,10 @@ Thank you for your interest in helping iDaVIE become better. We gladly accept co
 
 There are several ways to contribute to the development of iDaVIE.
 
+GitHub Discussions
+------------------
+iDaVIE hosts a `discussion forum <https://github.com/idia-astro/iDaVIE/discussions>`_ on the GitHub repository, where users can ask questions, request support, and discuss various topics related to iDaVIE and its use. Users are encouraged to post answers for other users and interact with our community.
+
 Issues
 ------
 **Create a new issue**

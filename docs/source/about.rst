@@ -15,6 +15,12 @@ The development of the iDaVIE project is a joint effort from:
 
 .. raw:: html
 
+    <img src="_static/IDIA_Logo.png"
+         style="width:30%;height:auto;"
+         class="center">
+
+.. raw:: html
+
     <img src="_static/vislab_logo.png"
          style="width:30%;height:auto;"
          class="center">
@@ -30,13 +36,13 @@ Software citation
 Please use the following DOI as a citation when using iDaVIE for publications.
 
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4614116.svg
-   :target: https://doi.org/10.5281/zenodo.4614116
+   :target: https://zenodo.org/doi/10.5281/zenodo.4614115
 
 Other relevant references are:
 
 * "Exploring and Interrogating Astrophysical Data in Virtual Reality", `Jarrett et al. 2021 <https://www.sciencedirect.com/science/article/pii/S2213133721000561?via%3Dihub>`_
 * "iDaVIE: immersive Data Visualisation Interactive Explorer for volumetric rendering", `Marchetti et al. 2021 <https://ui.adsabs.harvard.edu/abs/2020arXiv201211553M/abstract>`_
-* "Virtual Reality and Immersive Collaborative Environments: the New Frontier for Big Data Visualisation", `Sivitilli et al. 2021 (in press.) <https://ui.adsabs.harvard.edu/abs/2021arXiv210314397S/abstract>`_
+* "Virtual Reality and Immersive Collaborative Environments: the New Frontier for Big Data Visualisation", `Sivitilli et al. 2021 <https://ui.adsabs.harvard.edu/abs/2021arXiv210314397S/abstract>`_
 
 Acknowledgements
 ----------------

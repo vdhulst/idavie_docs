@@ -1,6 +1,6 @@
 Introduction
 ============
-.. note:: The software is in active development, andd while all precautions are taken to ensure as smooth an experience as possible, some issues might still occur. We would appreciate a bug report. Please see :ref:`contribute` for more detail. 
+.. note:: The software is in active development, and while all precautions are taken to ensure as smooth an experience as possible, some issues might still occur. We would appreciate a bug report. Please see :ref:`contribute` for more detail. 
 
 The mission of iDaVIE
 -----------------------
@@ -8,7 +8,7 @@ iDaVIE is part of the iDaVIE software suite which is under development at `IDIA 
 
 Codebase and releases
 ---------------------
-iDavIE-v is an open-source project. Its source code is available on the project's GitHub `repository <https://github.com/idia-astro/iDaVIE/>`_. 
+iDavIE is an open-source project. Its source code is available on the project's GitHub `repository <https://github.com/idia-astro/iDaVIE/>`_. 
 
 Installation guides are provided in the section :ref:`installation_configuration`, including the installation of the required VR environment.
 
@@ -16,6 +16,7 @@ If you want to build iDaVIE from source, please see :ref:`build`.
 
 Getting help
 ------------
+iDaVIE hosts a `discussion forum <https://github.com/idia-astro/iDaVIE/discussions>`_ on the GitHub repository, which is a good way to get in touch with other users of iDaVIE. We encourage users to ask questions and answer others in our community.
 The iDaVIE team welcomes any suggestion, feature request, or bug report to make iDaVIE better via:
 
 * Recommended: `GitHub Issues <https://github.com/idia-astro/iDaVIE/issues>`_

@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-iDaVIE: immersive Data Visualisation Interactive Explorer for volumetric rendering 
+iDaVIE: immersive Data Visualisation Interactive Explorer 
 =====================================================================================
 
 .. index:: Table of Contents
