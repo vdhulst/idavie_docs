@@ -35,7 +35,7 @@ Software citation
 -----------------
 Please use the following DOI as a citation when using iDaVIE for publications.
 
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4614116.svg
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4614115.svg
    :target: https://zenodo.org/doi/10.5281/zenodo.4614115
 
 Other relevant references are:
@@ -73,4 +73,4 @@ See our `NOTICE <https://github.com/idia-astro/iDaVIE/blob/main/NOTICE.md>`_ fil
 
 Copyright and Licence
 ---------------------
-Copyright (C) 2024 IDIA, INAF. This program is free software; you can redistribute it and/or modify it under the terms of the `GNU Lesser General Public License (LGPL) version 3 <https://github.com/idia-astro/iDaVIE/blob/main/LICENSE.md>`_ as published by the Free Software Foundation.
+Copyright (C) 2024 IDIA, INAF-OACT. This program is free software; you can redistribute it and/or modify it under the terms of the `GNU Lesser General Public License (LGPL) version 3 <https://github.com/idia-astro/iDaVIE/blob/main/LICENSE.md>`_ as published by the Free Software Foundation.

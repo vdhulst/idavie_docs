@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'iDaVIE'
-copyright = u'2024, IDIA Vislab, INAF'
+copyright = u'2024, IDIA Vislab, INAF-OACT'
 author = u'IDIA Vislab, INAF-OACT'
 
 # The short X.Y version
