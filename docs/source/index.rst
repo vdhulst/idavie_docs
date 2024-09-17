@@ -14,7 +14,7 @@ iDaVIE: immersive Data Visualisation Interactive Explorer
    :caption: iDaVIE user manual
 
    introduction.rst
-   about.rst
+   multidisciplinary.rst
    requirements.rst
    installation_and_configuration.rst
    contribute.rst
@@ -23,3 +23,4 @@ iDaVIE: immersive Data Visualisation Interactive Explorer
    gui.rst
    how_to_interac.rst
    how_to_demos.rst
+   about.rst
