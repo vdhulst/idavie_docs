@@ -134,26 +134,77 @@ After loading a file in the FILE tab, the user can put on the headset. The first
    
    Blue = Z (e.g., velocity or redshift)
 
-Main menu
-^^^^^^^^^
 
-
-Quick menu
+Quick Menu
 ^^^^^^^^^^
-TBD
+.. raw:: html
+     
+          <img src="_static/QuickMenu.png"
+               style="width:50%;height:auto;">
 
-Mask painting menu
+
+Mask painting Menu
 ^^^^^^^^^^^^^^^^^^
-TBD
+.. raw:: html
+     
+          <img src="_static/PaintMenu.png"
+               style="width:50%;height:auto;">
 
-Saving menu
-^^^^^^^^^^^
-TBD
 
-Stats & Moment maps menu
-^^^^^^^^^^^^^^^^^^^^^^^^
-TBD
+Source List Window
+^^^^^^^^^^^^^^^^^^
+.. raw:: html
+     
+          <img src="_static/SourcesMenu.png"
+               style="width:100%;height:auto;">
+
+
+
+Settings Window
+^^^^^^^^^^^^^^^
+.. raw:: html
+     
+          <img src="_static/SettingsMenu.png"
+               style="width:100%;height:auto;">
+
+
+
+Plots Window
+^^^^^^^^^^^^
+.. raw:: html
+     
+          <img src="_static/PlotsMenu.png"
+               style="width:100%;height:auto;">
+
+.. raw:: html
+     
+          <img src="_static/Keypad.png"
+               style="width:30%;height:auto;">
+
+
+
+Voice Command Window
+^^^^^^^^^^^^^^^^^^^^
+.. raw:: html
+     
+          <img src="_static/VoiceCommandMenu.png"
+               style="width:40%;height:auto;">
+
+
+
+Colormap Winow
+^^^^^^^^^^^^^^
+.. raw:: html
+     
+          <img src="_static/ColorMenu.png"
+               style="width:40%;height:auto;">
+
 
 VR Controller
 -------------
+
+.. raw:: html
+     
+          <img src="_static/CursorInfo.png"
+               style="width:100%;height:auto;">
 
