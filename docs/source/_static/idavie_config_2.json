@@ -1,0 +1,219 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "iDaVIE config",
+    "description": "Schema for iDaVIE config files (Version 2)",
+    "$id": "idavie_config_2",
+    "definitions": {
+        "colorMap": {
+            "type": "string",
+            "enum": [
+                "Accent", "Afmhot", "Autumn", "Binary", "Blues", "Bone", "BrBg", "Brg", "BuGn", "BuPu", "Bwr", "CmRmap", "Cool", "Coolwarm", "Copper", "Cubehelix", "Dark2", "Flag", "GistEarth", "GistGray", "GistHeat", "GistNcar", "GistRainbow", "GistStern", "GistYarg", "GnBu", "Gnuplot", "Gnuplot2", "Gray", "Greens", "Greys", "Hot", "Hsv", "Inferno", "Jet", "Magma", "NipySpectral", "Ocean", "Oranges", "OrRd", "Paired", "Pastel1", "Pastel2", "Pink", "PiYg", "Plasma", "PrGn", "Prism", "PuBu", "PuBuGn", "PuOr", "PuRd", "Purples", "Rainbow", "RdBu", "RdGy", "RdPu", "RdYlBu", "RdYlGn", "Reds", "Seismic", "Set1", "Set2", "Set3", "Spectral", "Spring", "Summer", "Tab10", "Tab20", "Tab20B", "Tab20C", "Terrain", "Viridis", "Winter", "Wistia", "YlGn", "YlGnBu", "YlOrBr", "YlOrRd", "Turbo", "None"
+            ]
+        },
+        "scalingType": {
+            "type": "string",
+            "enum": [
+                "Linear", "Log", "Sqrt", "Square", "Power", "Gamma"
+            ]
+        },
+        "angleCoordFormat": {
+            "type": "string",
+            "enum": [
+                "Sexagesimal", "Decimal"
+            ]
+        },
+        "velocityUnit": {
+            "type": "string",
+            "enum": [
+                "Km", "M"
+            ]
+        },
+        "confidenceLevel": {
+            "type": "string",
+            "enum": [
+                "High", "Medium", "Low", "Rejected"
+            ]
+        },
+        "renderConfig": {
+            "type": "object",
+            "properties": {
+                "colorMap": {
+                    "$ref": "#/definitions/colorMap",
+                    "default": "Plasma"
+                },
+                "scalingType": {
+                    "$ref": "#/definitions/scalingType",
+                    "default": "Linear"
+                }
+            }
+        },
+        "limitType": {
+            "type": "string",
+            "enum": [
+                "ZScale", "MinMax"
+            ],
+            "default": "ZScale"
+        },
+        "thresholdType": {
+            "type": "string",
+            "enum": [
+                "Mask", "Threshold"
+            ],
+            "default": "Mask"
+        }
+    },
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri"
+        },
+        "maxModeDownsampling": {
+            "description": "Use maximum-mode downsampling when reducing cube size before uploading to the GPU.",
+            "type": "boolean",
+            "default": true
+        },
+        "foveatedRendering": {
+            "description": "Use foveated rendering to improve rendering performance at the expense of image quality in the periphery.",
+            "type": "boolean",
+            "default": true
+        },
+        "bilinearFiltering": {
+            "description": "Use bilinear filtering when sampling from the data texture on the GPU. Smooths cube appearance at the expense of performance.",
+            "type": "boolean",
+            "default": false
+        },
+        "gpuMemoryLimitMb": {
+            "description": "Maximum size (in megabytes) of cubes uploaded to the GPU. Cubes larger than this limit will be downsampled before GPU upload.",
+            "type": "integer",
+            "minimum": 32,
+            "maximum": 2048,
+            "default": 384
+        },
+        "maxRaymarchingSteps": {
+            "description": "Maximum number of raymarching steps to take when rendering the cube. A larger number of steps will improve cube appearance when large cubes are used, at the expense of performance.",
+            "type": "integer",
+            "minimum": 16,
+            "maximum": 2048,
+            "default": 384
+        },
+        "angleCoordFormat": {
+            "description": "Format for angle coordinates.",
+            "$ref": "#/definitions/angleCoordFormat"
+        },
+        "velocityUnit": {
+            "description": "Unit for velocity.",
+            "$ref": "#/definitions/velocityUnit"
+        },
+        "defaultColorMap": {
+            "description": "Default color map to apply when loading a new cube.",
+            "$ref": "#/definitions/colorMap",
+            "default": "Inferno"
+        },
+        "defaultScalingType": {
+            "description": "Default scaling type to use apply when loading a new cube.",
+            "$ref": "#/definitions/scalingType"
+        },
+        "voiceCommandConfidenceLevel": {
+            "description": "Confidence level threshold to use when recognising voice commands.",
+            "$ref": "#/definitions/confidenceLevel"
+        },
+        "flags": {
+            "description": "The different flags that can be applied to sources in a source list, and exported with them.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "histogramIncrementSteps": {
+            "description": "The number of steps for a full range when incrementing the histogram min/max.",
+            "type": "integer"
+        },
+        "histogramStepsPerSecond": {
+            "description": "The number of steps per second when incrementing the histogram min/max.",
+            "type": "integer"
+        },
+        "useQuickModeForPercentiles": {
+            "description": "Use the quick, less precise percentile calculation for the scale min/max that uses the histogram instead of the full data set.",
+            "type": "boolean"
+        },
+        "restFrequenciesGHz": {
+            "description": "Default rest frequencies in GHz. These are used for frequency <-> velocity conversions.",
+            "type": "object",
+            "additionalProperties": {
+                "type": "number"
+            }
+        },
+        "tunnellingVignetteOn": {
+            "description": "Enable tunnelling vignette.",
+            "type": "boolean"
+        },
+        "tunnellingVignetteIntensity": {
+            "description": "Intensity of the tunnelling vignette.",
+            "type": "number"
+        },
+        "tunnellingVignetteEnd": {
+            "description": "End value of the tunnelling vignette.",
+            "type": "number"
+        },
+        "displayCursorInfoOutsideCube": {
+            "description": "Allow the controller to display information outside the volume cube.",
+            "type": "boolean"
+        },
+        "displayVoiceCommandStatus": {
+            "description": "Display the voice command status in the cursor information.",
+            "type": "boolean"
+        },
+        "usePushToTalk": {
+            "description": "Enable the requirement that the secondary button on the primary controller must be held down to use voice commands.",
+            "type": "boolean"
+        },
+        "useSimpleVoiceCommandStatus": {
+            "description": "Use the simple voice command status indicator.",
+            "type": "boolean"
+        },
+        "importedFeaturesStartVisible": {
+            "description": "Imported features start visible.",
+            "type": "boolean"
+        },
+        "momentMaps": {
+            "type": "object",
+            "description": "Moment map configuration",
+            "properties": {
+                "defaultLimitType": {
+                    "description": "Default limit type to use when rendering moment maps",
+                    "$ref": "#/definitions/limitType"
+                },
+                "defaultThresholdType": {
+                    "description": "Default threshold type to use when calculating moment maps",
+                    "$ref": "#/definitions/thresholdType"
+                },
+                "defaultThreshold": {
+                    "description": "Default threshold value to use when calculating moment maps with a threshold type",
+                    "type": "number",
+                    "default": 0
+                },
+                "mom1MaskThreshold": {
+                    "description": "Mask threshold for M1 moment map",
+                    "type": "number",
+                    "default": 0
+                },
+                "m0": {
+                    "description": "Render configuration for M0",
+                    "$ref": "#/definitions/renderConfig",
+                    "default": {
+                        "colorMap": "Plasma",
+                        "scalingType": "Sqrt"
+                    }
+                },
+                "m1": {
+                    "description": "Render configuration for M1",
+                    "$ref": "#/definitions/renderConfig",
+                    "default": {
+                        "colorMap": "Turbo",
+                        "scalingType": "Linear"
+                    }
+                }
+            }
+        }
+    }
+}
