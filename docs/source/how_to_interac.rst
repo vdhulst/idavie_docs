@@ -40,7 +40,7 @@ In this section we provide guidelines on how to use the Oculus controllers as th
 Voice commands
 --------------
 In VR, the use of the controllers can become tricky, so we have implemented a series of voice commands that can be used as an alternative to interact with the data. The list below contains all the possible voice commands that can be used instead of the options in the VR quick menu. Each of the following commands will have the exact same outcome as the menu actions. A successful voice command is indicated by haptic feedback (vibration) on the primary hand controller. If no feedback is received, then the voice command did not activate and the user should try again.
-
+.. Tip:: It is possible to switch the voice commands to only activate when a button on the controller is pressed. This is useful in noisy environments. Change the :literal:`usePushToTalk` setting in the configuration file to true, and voice commands will then require the secondary button on the primary controller to be held down to function.
 .. list-table::
    :widths: 25 65
    :header-rows: 1
