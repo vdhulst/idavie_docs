@@ -20,6 +20,133 @@ Source code
 -----------
 Please see :ref:`build` for instructions on building iDaVIE from the source code. We also provide detailed :ref:`contribution` guidelines.
 
+Configuration File
+------------------
+The first time iDaVIE is launched, a file named :literal:`config.json` will be generated in the main directory where the executable is located. This file contains the default configuration settings for the software. The user can modify this file to customize the software to their needs. The configuration file has the following settings that can be modified:
+
+Config Options
+~~~~~~~~~~~~~~
+
+.. list-table::
+   :widths: 15 85
+   :header-rows: 0
+
+   * - **$schema**
+     - The URI of the JSON schema used for validation and code completion 
+       with JSON editors. This should not be modified.
+   * - **maxModeDownsampling**
+     - Use maximum-mode downsampling when reducing cube size before 
+       uploading to the GPU. Setting to False will use the slower average 
+       downsampling. Default: ``true``.
+   * - **foveatedRendering**
+     - Use static foveated rendering to improve rendering performance at 
+       the expense of image quality in the periphery of the headset display. 
+       Default: ``true``.
+   * - **bilinearFiltering**
+     - Use bilinear filtering when sampling from the data texture on the 
+       GPU. Smooths cube appearance at the expense of performance. It is 
+       recommended to leave on ``false`` as this gives voxels in the cube a 
+       more obvious definition. Default: ``false``.
+   * - **gpuMemoryLimitMb**
+     - Maximum size (in megabytes) of cubes uploaded to the GPU. Cubes 
+       larger than this limit will be downsampled before GPU upload. Stronger 
+       GPUs can push this limit higher. Default: ``384``.
+   * - **maxRaymarchingSteps**
+     - Maximum number of raymarching steps to take when rendering the cube. 
+       A larger number of steps will improve cube appearance when large cubes 
+       are used, at the expense of performance. Default: ``384``.
+   * - **angleCoordFormat**
+     - Format for angle coordinates. Options: ``Sexagesimal``, ``Decimal``. 
+       Default: ``Sexagesimal``.
+   * - **velocityUnit**
+     - Unit for velocity. Options: ``Km``, ``M``. Default: ``Km``.
+   * - **defaultColorMap**
+     - Default color map to apply when loading a new cube. Options: Various 
+       color maps located in the VR Color map window. Default: ``Inferno``.
+   * - **defaultScalingType**
+     - Default scaling type to use when applying the color map to a cube. 
+       Options: ``Linear``, ``Log``, ``Sqrt``, ``Square``, ``Power``, 
+       ``Gamma``. Default: ``Linear``.
+   * - **voiceCommandConfidenceLevel**
+     - Confidence level threshold to use when recognizing voice commands. 
+       Options: ``High``, ``Medium``, ``Low``, ``Rejected``. Default: 
+       ``Low``.
+   * - **flags**
+     - The different flag strings that can be applied to sources in a source 
+       list, and exported with them. Other suggested flags can be letters or 
+       quality (i.e. "Good", "Bad", etc.). Default: ``["-1", "0", "1"]``.
+   * - **histogramIncrementSteps**
+     - The number of steps that make up the full range of the min/max scaling 
+       for the histogram in the VR Plots window. Default: ``40``.
+   * - **histogramStepsPerSecond**
+     - The number of steps per second when incrementing the histogram min/max 
+       scales in the VR Plots window. Default: ``10``.
+   * - **useQuickModeForPercentiles**
+     - Use the quick, less precise percentile calculation for the scale min/max 
+       that uses the histogram instead of the full data set when selecting 
+       pre-defined histogram percentiles for the min/max scales in the 
+       desktop GUI. Default: ``true``.
+   * - **restFrequenciesGHz**
+     - Rest frequencies in GHz that can be chosen in the desktop or VR GUIs. 
+       These are used for frequency <-> velocity conversions. Add more to avoid 
+       typing in manually every session. Default: 
+       ``{"HI": 1.420406, "12CO(1-0)": 115.271, "12CO(2-1)": 230.538, 
+       "12CO(3-2)": 345.796, "Halpha": 456806}``.
+   * - **tunnellingVignetteOn**
+     - Enable tunnelling vignette that adds black region in headset peripheries. 
+       Default: ``true``.
+   * - **tunnellingVignetteIntensity**
+     - Intensity of the tunnelling vignette. Default: ``1.0``.
+   * - **tunnellingVignetteEnd**
+     - End value of the tunnelling vignette. This is how far the vignette 
+       extends into the view. Default: ``0.40``.
+   * - **displayCursorInfoOutsideCube**
+     - Allow the controller to display information outside the volume cube. 
+       Default: ``false``.
+   * - **displayVoiceCommandStatus**
+     - Display the voice command status in the cursor information. Default: 
+       ``true``.
+   * - **usePushToTalk**
+     - Enable the requirement that the secondary button on the primary controller 
+       must be held down to use voice commands. This is recommended for noisy 
+       environments. Default: ``false``.
+   * - **useSimpleVoiceCommandStatus**
+     - Use the simple voice command status indicator. This displays simple icons 
+       to indicate the status of voice commands. Setting this to false uses 
+       more informative text version. Default: ``true``.
+   * - **importedFeaturesStartVisible**
+     - Imported sources start visible. Default: ``true``.
+
+**Moment Maps Config Options**
+
+.. list-table::
+   :widths: 15 85
+   :header-rows: 0
+
+   * - **momentMaps.defaultThresholdType**
+     - Default threshold type to use when calculating moment maps. Options: 
+       ``Mask``, ``Threshold``. Default: ``Mask``.
+   * - **momentMaps.defaultLimitType**
+     - Default limit type to use when rendering moment maps. Options: 
+       ``ZScale``, ``MinMax``. Default: ``ZScale``.
+   * - **momentMaps.defaultThreshold**
+     - Default threshold value to use when calculating moment maps with a 
+       threshold type. Default: ``0``.
+   * - **momentMaps.mom1MaskThreshold**
+     - Mask threshold for M1 moment map. Default: ``0``.
+   * - **momentMaps.m0.colorMap**
+     - Color map for M0 moment map. Options include any of the colormaps. 
+       Default: ``Plasma``.
+   * - **momentMaps.m0.scalingType**
+     - Scaling type for M0 moment map. Options are the same as 
+       defaultScalingType. Default: ``Sqrt``.
+   * - **momentMaps.m1.colorMap**
+     - Color map for M1 moment map. Options include any of the colormaps. 
+       Default: ``Turbo``.
+   * - **momentMaps.m1.scalingType**
+     - Scaling type for M1 moment map. Options are the same as 
+       defaultScalingType. Default: ``Linear``.
+
 Troubleshooting
 ---------------
 In this section we share some useful tips where we found a solution to a known issue:

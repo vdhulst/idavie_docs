@@ -1,4 +1,5 @@
-.. _contribute:
+.. _contribution:
+
 Contributing to the iDaVIE project
 ==================================
 
