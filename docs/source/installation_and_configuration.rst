@@ -171,7 +171,7 @@ In this section we share some useful tips where we found a solution to a known i
 
   #. Post an issue on the Github repository, or,
   
-  #. Make contact with us and send us the log files along with your bug reports. The log files can be found in the directory :literal:`i-DaVIE/Outputs/Logs`.
+  #. Make contact with us and send us the log files along with your bug reports. The log files can be found in the directory :literal:`iDaVIE/Outputs/Logs`.
   
 .. WARNING:: Unity only allows for a maximum of two log files to be stored. Therefore, if a problem is encountered with iDaVIE, make sure to copy the log file to a different folder **BEFORE** starting a new iDaVIE session, otherwise the log file reporting the specific problem encountered will be lost.
 
