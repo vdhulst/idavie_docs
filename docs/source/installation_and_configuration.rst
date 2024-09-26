@@ -6,7 +6,7 @@ Installation and configuration
 
 Executable
 -----------
-Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDaVIE_v.1.0.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/iDaVIE/releases/latest>`_.
+Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDaVIE.1.0.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/iDaVIE/releases/latest>`_.
 
 .. raw:: html
 
