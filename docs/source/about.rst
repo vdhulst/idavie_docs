@@ -74,3 +74,8 @@ See our `NOTICE <https://github.com/idia-astro/iDaVIE/blob/main/NOTICE.md>`_ fil
 Copyright and Licence
 ---------------------
 Copyright (C) 2024 IDIA, INAF-OACT. This program is free software; you can redistribute it and/or modify it under the terms of the `GNU Lesser General Public License (LGPL) version 3 <https://github.com/idia-astro/iDaVIE/blob/main/LICENSE.md>`_ as published by the Free Software Foundation.
+
+Contact us
+----------
+ * `GitHub discussions<https://github.com/idia-astro/iDaVIE/discussions>`_
+ * `IDIA vislab help <vislab@idia.ac.za>`_ (vislab@idia.ac.za)

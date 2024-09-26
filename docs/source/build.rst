@@ -1,6 +1,6 @@
 .. _build:
 Building iDaVIE from source
-==============================
+===========================
 
 As a Unity project, there are several steps to follow to compile iDaVIE from source.
 
@@ -13,6 +13,7 @@ Prerequisites
 
   * Download `Unity Hub for Windows <https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe>`_ from Unity's website and install it.
   * From the Unity Hub, install Unity version :literal:`2021.3.xf1`, where :literal:`x` is the highest number available.
+  * For now, we will continue using Unity version :literal:`2021.3.xf1`. We will investigate upgrading Unity versions at major releases.
 
 #. Install CMake
 

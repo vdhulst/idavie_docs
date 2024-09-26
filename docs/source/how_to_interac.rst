@@ -42,7 +42,7 @@ Voice commands
 In VR, the use of the controllers can become tricky, so we have implemented a series of voice commands that can be used as an alternative to interact with the data. The list below contains all the possible voice commands that can be used instead of the options in the VR quick menu. Each of the following commands will have the exact same outcome as the menu actions. A successful voice command is indicated by haptic feedback (vibration) on the primary hand controller. If no feedback is received, then the voice command did not activate and the user should try again.
 
 .. list-table::
-   :widths: 25 60
+   :widths: 25 65
    :header-rows: 1
 
    * - Command
@@ -53,14 +53,18 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
      - Set the minimum threshold (floor) of the voxel intensity mapping.
    * - "Edit max"
      - Set the maximum threshold (ceiling) of the voxel intensity mapping.
+   * - "Save threshold"
+     - Sets the threshold values after editing (equivalent to pressing
+       
+       the front trigger button).
    * - "Reset threshold"
      - Reset the thresholding to the default (startup) values.
    * - **Changing colour map**
      -
    * - "colour map plasma"
-     - Set the colour map to a preferred one. Options are: plasma, turbo,
-
-       rainbow, magma, inferno, viridis, cube helix.\*
+     - Set the colour map to a preferred one. Options are: cube helix, inferno, 
+      
+       magma, plasma, rainbow, turbo, viridis.\*
    * - "reset transform"
      - Reset the colour mapping to the default colour map (*inferno*).
    * - **Changing ray marching settings**
@@ -71,6 +75,14 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
        (**DEFAULT**)
    * - "projection average"
      - Utilise ray-marching with average along line-of-sight algorithm.
+   * - **Changing downsampling settings**
+     -
+   * - "sampling mode maximum"
+     - Switch downsampling to use the maximum value in a region.
+
+       (**DEFAULT**)
+   * - "sampling mode average"
+     - Switch downsampling to use the average value in a region.
    * - **Changing voxels scale**
      -
    * - "linear scale"
@@ -110,6 +122,9 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
 
    * - "reset crop"
      - Return to the full cube view.
+
+   * - "export sub cube"
+     - Save the selected area as a subcube in FITS format.
    * - **Visualisation of cube masks**
      -
    * - "mask on"
@@ -176,6 +191,10 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
      - When a source is selected in a list, this command will teleport
 
        the user to the position of the source in the cube
+   * - "add to list"
+     - Add the active source to the new list (found in the sources
+       
+       window, third tab).
    * - **Get cursor information**
      - 
    * - "cursor info"
