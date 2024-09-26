@@ -62,9 +62,9 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - **Changing colour map**
      -
    * - "colour map plasma"
-     - Set the colour map to a preferred one. Options are: cube helix, inferno, 
+     - Set the colour map to a preferred one. Options are: cube helix,
       
-       magma, plasma, rainbow, turbo, viridis.\*
+       inferno, magma, plasma, rainbow, turbo, viridis.\*
    * - "reset transform"
      - Reset the colour mapping to the default colour map (*inferno*).
    * - **Changing ray marching settings**
