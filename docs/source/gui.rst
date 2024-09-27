@@ -161,7 +161,7 @@ Mask painting menu
 
 In the mask painting mode, the user can paint the mask using the controllers. The primary controller is used to paint the mask and adjust the brush size, while the secondary controller can be used to undo/redo brush strokes. Masks work by numbering voxels as integers corresponding to the Source ID of the masked region. Non-masked voxels are numbered as 0. Once started, the Mask painting menu will open on the secondary controller. The various buttons for the menu are detailed below.
 
-.. Note:: Paint mode can only be started if the cube is at full resolution. If the cube is not at full resolution, the user will be prompted to increase the resolution before starting paint mode by cropping the cube.
+**NOTE:** Paint mode can only be started if the cube is at full resolution. If the cube is not at full resolution, the user will be prompted to increase the resolution before starting paint mode by cropping the cube.
 
 .. raw:: html
      
@@ -245,7 +245,8 @@ Plots Window
 
 The Plots window gives the user access to useful 2D plots calculated in realtime for the cube.
 
-.. Note:: The Spectral Profile can currently only be viewed for masked sources that are selected. This will be expanded in the future, but in the meantime, you can view the spectral profile of any region by creating a new source and painting the voxels.
+**NOTE:** The Spectral Profile can currently only be viewed for masked sources that are selected. This will be expanded in the future, but in the meantime, you can view the spectral profile of any region by creating a new source and painting the voxels.
+
 
 .. raw:: html
      
@@ -255,6 +256,9 @@ The Plots window gives the user access to useful 2D plots calculated in realtime
 
 1) Displays the moment 0 map of the currently cropped region of the cube. The moment 0 map is the integrated intensity of the cube.
 2) Displays the moment 1 map of the currently cropped region of the cube. The moment 1 map is the intensity weighted velocity field of the cube.
+
+**NOTE:** The code for the moment map calculation is located `here in the iDaVIE repository. <https://github.com/idia-astro/iDaVIE/blob/6f644a5a3ef0b6339cddeaa52438c431023aad54/Assets/Resources/MomentMapGenerator.compute#L23>`_
+
 3) The colourbar for the moment maps. Colour settings can be adjusted in the config file using the :literal:`momentMaps.m0.colorMap` and :literal:`momentMaps.m1.colorMap` settings.
 4) What voxels to include for the moment map calculations. This can be set to Threshold which uses the threshold data values set below or Mask which uses the mask to exclude voxels.
 5) The minimum threshold for the moment map calculations. This sets the minimum data value to include in the moment map calculations.

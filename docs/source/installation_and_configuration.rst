@@ -40,9 +40,21 @@ Config Options
    * - **maxModeDownsampling**
      - Use maximum-mode downsampling when reducing cube size before 
      
-       uploading to the GPU. Setting to False will use the slower average 
-     
-       downsampling. Default: ``true``.
+       uploading to the GPU. This takes the maximum values of the 3D
+
+       windows of voxels (depending on downsampling factors needed
+
+       to reduce the cube size to be under **gpuMemoryLimitMb**) and
+
+       sets individual voxels to those values in the downsampled version
+
+       of the cube. Setting to :literal:`false` will use the slower average mode
+       
+       that sets the voxel values to the average of the 3D windows. The downsampling
+       
+       algorithm can be found `here in the iDaVIE source code. <https://github.com/idia-astro/iDaVIE/blob/6f644a5a3ef0b6339cddeaa52438c431023aad54/native_plugins_cmake/data_analysis_tool.cpp#L139>`_
+       
+       Default: ``true``.
    * - **foveatedRendering**
      - Use static foveated rendering to improve rendering performance at 
      
@@ -122,9 +134,7 @@ Config Options
        
        more to avoid typing in manually every session. Default: 
      
-       ``{"HI": 1.420406, "12CO(1-0)": 115.271, "12CO(2-1)": 230.538, 
-     
-       "12CO(3-2)": 345.796, "Halpha": 456806}``.
+       ``{"HI": 1.420406, "12CO(1-0)": 115.271, "12CO(2-1)": 230.538, "12CO(3-2)": 345.796, "Halpha": 456806}``.
    * - **tunnellingVignetteOn**
      - Enable tunnelling vignette that adds black region in headset 
      
@@ -183,8 +193,8 @@ Moment Maps Config Options
      - Mask threshold for M1 moment map. Default: ``0``.
    * - **momentMaps.m0.colorMap**
      - Colour map for M0 moment map. Options include any of the
-     
-      colourmaps found `here <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_. 
+ 
+       colourmaps found `here <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_. 
      
        Default: ``Plasma``.
    * - **momentMaps.m0.scalingType**
@@ -194,7 +204,7 @@ Moment Maps Config Options
    * - **momentMaps.m1.colorMap**
      - Colour map for M1 moment map. Options include any of the
      
-      colourmaps found `here <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_. 
+       colourmaps found `here <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_. 
      
        Default: ``Plasma``.
    * - **momentMaps.m1.scalingType**
