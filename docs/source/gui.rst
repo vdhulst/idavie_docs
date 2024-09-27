@@ -238,6 +238,8 @@ The Settings window allows the user to adjust the rendering settings of the cube
 11) Set the steps of the moment map threshold adjustment. When the user adjusts the custom threshold for the moment maps in the Plots menu, this number will be the step size.
 12) Open the keypad to input a custom moment map threshold step size (see Keypad below).
 
+.. _plots:
+
 Plots Window
 ^^^^^^^^^^^^
 
@@ -293,9 +295,9 @@ The Voice Command window displays the available voice commands that the user can
 2) Use the scroll buttons to view more voice commands. The list can also be scrolled by moving the thumbstick up and down while the laser pointer is hovering over the list.
 
 Colourmap Winow
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
-The Colourmap window displays the available colour maps that the user can apply to the cube. 
+The Colourmap window displays the available colour maps that the user can apply to the cube. iDaVIE makes use of the colourmaps available in the matplotlib Python library. See the `matplotlib documentation <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_ for more information on the available colour maps.
 
 
 .. raw:: html

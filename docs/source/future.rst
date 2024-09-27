@@ -1,6 +1,8 @@
 .. _future:
+
 Future Plans
 ============
+
 While iDaVIE has many useful features already, there are still many features that would be of significant use to scientists. We have a roadmap that we will continue to direct iDaVIE's development along, and provide an overview of our future plans.
 
 In the **short** term, we list features that we are actively working on and will be included in the next major release. This is not an exhaustive list and will be added to as development progresses. **Medium**-term goals are major feature additions that will require several weeks to months of dedicated development, with an initial idea or prototype already available. **Long**-term plans are major features that are dreams still, with no concrete plans on how to implement them yet.

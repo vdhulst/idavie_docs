@@ -15,6 +15,7 @@ iDaVIE provides:
 * **PNG** Screenshots and moment maps exported as PNG files, stored in :literal:`Output/Camera` and :literal:`Output/MomentMaps` respectively.
 * **VOTable** Catalog exported from an edited or created mask, stored in :literal:`Output/Catalogs`.
 * **log** Debug files created by iDaVIE, stored in :literal:`Output/Logs`. Used for error reporting and should be attached when reporting issues.
+* **CSV** Spectral profiles calculated from masked sources in the VR :ref:`plots` can be exported as CSV files, stored in :literal:`Output/SpectralProfiles`.
 * **FITS** Created or modified masks, or moment maps exported as FITS files:
 
   * If a mask is loaded and modified in VR then it can be saved either overwriting the original mask **or**  as a copy. In the former case the mask will be saved with the same name of the original mask and in the same directory, in the latter case the suffix :literal:`-copy.fits` will be added to the original mask name and the edited mask will be saved in the same directory as the original mask (e.g. the edited mask file name will then be :literal:`originalmaskname-copy.fits`).
