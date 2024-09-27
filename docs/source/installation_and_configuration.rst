@@ -30,6 +30,7 @@ Config Options
 .. list-table::
    :widths: 15 85
    :header-rows: 1
+   
    * - **Configuration Setting**
      - Description 
    * - **$schema**
@@ -160,6 +161,7 @@ Config Options
 .. list-table::
    :widths: 15 85
    :header-rows: 1
+
    * - **Moment Map Setting**
      - Description 
    * - **momentMaps.defaultThresholdType**
