@@ -30,13 +30,13 @@ Config Options
 .. list-table::
    :widths: 15 85
    :header-rows: 1
-   
+
    * - **Configuration Setting**
      - Description 
    * - **$schema**
-     - The URI of the JSON schema used for validation and code completion 
-
-       with JSON editors. This should not be modified.
+     - The URI of the JSON schema used for validation and code 
+     
+       completion with JSON editors. This should not be modified.
    * - **maxModeDownsampling**
      - Use maximum-mode downsampling when reducing cube size before 
      
@@ -60,27 +60,29 @@ Config Options
    * - **gpuMemoryLimitMb**
      - Maximum size (in megabytes) of cubes uploaded to the GPU. Cubes 
      
-       larger than this limit will be downsampled before GPU upload. Stronger 
-     
-       GPUs can push this limit higher. Default: ``384``.
+       larger than this limit will be downsampled before GPU upload.
+       
+       Stronger GPUs can push this limit higher. Default: ``384``.
    * - **maxRaymarchingSteps**
-     - Maximum number of raymarching steps to take when rendering the cube. 
+     - Maximum number of raymarching steps to take when rendering the
      
-       A larger number of steps will improve cube appearance when large cubes 
-     
-       are used, at the expense of performance. Default: ``384``.
+       cube. A larger number of steps will improve cube appearance when
+       
+       large cubes are used, at the expense of performance. Default: ``384``.
    * - **angleCoordFormat**
-     - Format for angle coordinates. Options: ``Sexagesimal``, ``Decimal``. 
+     - Format for angle coordinates. 
      
-       Default: ``Sexagesimal``.
+       Options: ``Sexagesimal``, ``Decimal``. Default: ``Sexagesimal``.
    * - **velocityUnit**
      - Unit for velocity. Options: ``Km``, ``M``. Default: ``Km``.
    * - **defaultColorMap**
-     - Default color map to apply when loading a new cube. Options: Various 
-
-       color maps located in the VR Color map window. Default: ``Inferno``.
+     - Default colour map to apply when loading a new cube.
+     
+       Options: Any of those on `this <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_ list of matplotlib maps.
+       
+       Default: ``Inferno``.
    * - **defaultScalingType**
-     - Default scaling type to use when applying the color map to a cube. 
+     - Default scaling type to use when applying the colour map to a cube. 
      
        Options: ``Linear``, ``Log``, ``Sqrt``, ``Square``, ``Power``, 
      
@@ -88,9 +90,9 @@ Config Options
    * - **voiceCommandConfidenceLevel**
      - Confidence level threshold to use when recognizing voice commands. 
      
-       Options: ``High``, ``Medium``, ``Low``, ``Rejected``. Default: 
-     
-       ``Low``.
+       Options: ``High``, ``Medium``, ``Low``, ``Rejected``.
+       
+       Default: ``Low``.
    * - **flags**
      - The different flag strings that can be applied to sources in a source 
      
@@ -98,27 +100,27 @@ Config Options
      
        quality (i.e. "Good", "Bad", etc.). Default: ``["-1", "0", "1"]``.
    * - **histogramIncrementSteps**
-     - The number of steps that make up the full range of the min/max scaling 
+     - The number of steps that make up the full range of the min/max
      
-       for the histogram in the VR Plots window. Default: ``40``.
+       scaling for the histogram in the VR Plots window. Default: ``40``.
    * - **histogramStepsPerSecond**
-     - The number of steps per second when incrementing the histogram min/max 
+     - The number of steps per second when incrementing the histogram
      
-       scales in the VR Plots window. Default: ``10``.
+       min/max scales in the VR Plots window. Default: ``10``.
    * - **useQuickModeForPercentiles**
-     - Use the quick, less precise percentile calculation for the scale min/max 
+     - Use the quick, less precise percentile calculation for the scale
      
-       that uses the histogram instead of the full data set when selecting 
-     
-       pre-defined histogram percentiles for the min/max scales in the 
-     
-       desktop GUI. Default: ``true``.
+       min/max that uses the histogram instead of the full data set when
+       
+       selecting pre-defined histogram percentiles for the min/max scales
+       
+       in the desktop GUI. Default: ``true``.
    * - **restFrequenciesGHz**
      - Rest frequencies in GHz that can be chosen in the desktop or VR GUIs. 
      
-       These are used for frequency <-> velocity conversions. Add more to avoid 
-     
-       typing in manually every session. Default: 
+       These are used for frequency <-> velocity conversions. Add more to
+       
+       avoid typing in manually every session. Default: 
      
        ``{"HI": 1.420406, "12CO(1-0)": 115.271, "12CO(2-1)": 230.538, 
      
@@ -138,21 +140,21 @@ Config Options
      
        Default: ``false``.
    * - **displayVoiceCommandStatus**
-     - Display the voice command status in the cursor information. Default: 
+     - Display the voice command status in the cursor information.
      
-       ``true``.
+       Default: ``true``.
    * - **usePushToTalk**
-     - Enable the requirement that the secondary button on the primary controller 
+     - Enable the requirement that the secondary button on the primary
      
-       must be held down to use voice commands. This is recommended for noisy 
-     
-       environments. Default: ``false``.
+       controller must be held down to use voice commands. This is
+       
+       recommended for noisy environments. Default: ``false``.
    * - **useSimpleVoiceCommandStatus**
-     - Use the simple voice command status indicator. This displays simple icons 
-     
-       to indicate the status of voice commands. Setting this to false uses 
-     
-       more informative text version. Default: ``true``.
+     - Use the simple voice command status indicator. This displays simple
+       
+       icons to indicate the status of voice commands. Setting this to
+       
+       false uses a more informative text version. Default: ``true``.
    * - **importedFeaturesStartVisible**
      - Imported sources start visible. Default: ``true``.
 
@@ -165,21 +167,23 @@ Config Options
    * - **Moment Map Setting**
      - Description 
    * - **momentMaps.defaultThresholdType**
-     - Default threshold type to use when calculating moment maps. Options: 
+     - Default threshold type to use when calculating moment maps.
      
-       ``Mask``, ``Threshold``. Default: ``Mask``.
+       Options: ``Mask``, ``Threshold``. Default: ``Mask``.
    * - **momentMaps.defaultLimitType**
-     - Default limit type to use when rendering moment maps. Options: 
+     - Default limit type to use when rendering moment maps.
      
-       ``ZScale``, ``MinMax``. Default: ``ZScale``.
+       Options: ``ZScale``, ``MinMax``. Default: ``ZScale``.
    * - **momentMaps.defaultThreshold**
-     - Default threshold value to use when calculating moment maps with a 
+     - Default threshold value to use when calculating moment maps
      
-       threshold type. Default: ``0``.
+       with a threshold type. Default: ``0``.
    * - **momentMaps.mom1MaskThreshold**
      - Mask threshold for M1 moment map. Default: ``0``.
    * - **momentMaps.m0.colorMap**
-     - Color map for M0 moment map. Options include any of the colormaps. 
+     - Colour map for M0 moment map. Options include any of the
+     
+      colourmaps found `here <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_. 
      
        Default: ``Plasma``.
    * - **momentMaps.m0.scalingType**
@@ -187,9 +191,11 @@ Config Options
      
        defaultScalingType. Default: ``Sqrt``.
    * - **momentMaps.m1.colorMap**
-     - Color map for M1 moment map. Options include any of the colormaps. 
+     - Colour map for M1 moment map. Options include any of the
      
-       Default: ``Turbo``.
+      colourmaps found `here <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_. 
+     
+       Default: ``Plasma``.
    * - **momentMaps.m1.scalingType**
      - Scaling type for M1 moment map. Options are the same as 
      
