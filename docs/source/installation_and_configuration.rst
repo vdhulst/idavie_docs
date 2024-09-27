@@ -126,9 +126,9 @@ Config Options
      
        "12CO(3-2)": 345.796, "Halpha": 456806}``.
    * - **tunnellingVignetteOn**
-     - Enable tunnelling vignette that adds black region in headset peripheries. 
+     - Enable tunnelling vignette that adds black region in headset 
      
-       Default: ``true``.
+       peripheries. Default: ``true``.
    * - **tunnellingVignetteIntensity**
      - Intensity of the tunnelling vignette. Default: ``1.0``.
    * - **tunnellingVignetteEnd**
@@ -158,7 +158,8 @@ Config Options
    * - **importedFeaturesStartVisible**
      - Imported sources start visible. Default: ``true``.
 
-**Moment Maps Config Options**
+Moment Maps Config Options
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :widths: 15 85
@@ -169,11 +170,11 @@ Config Options
    * - **momentMaps.defaultThresholdType**
      - Default threshold type to use when calculating moment maps.
      
-       Options: ``Mask``, ``Threshold``. Default: ``Mask``.
+       Options\: ``Mask``, ``Threshold``. Default\: ``Mask``.
    * - **momentMaps.defaultLimitType**
      - Default limit type to use when rendering moment maps.
      
-       Options: ``ZScale``, ``MinMax``. Default: ``ZScale``.
+       Options\: ``ZScale``, ``MinMax``. Default\: ``ZScale``.
    * - **momentMaps.defaultThreshold**
      - Default threshold value to use when calculating moment maps
      
