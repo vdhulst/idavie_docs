@@ -32,7 +32,7 @@ Config Options
    :header-rows: 1
 
    * - **Configuration Setting**
-     - Description 
+     - Description
    * - **$schema**
      - The URI of the JSON schema used for validation and code 
      
@@ -116,11 +116,11 @@ Config Options
        
        in the desktop GUI. Default: ``true``.
    * - **restFrequenciesGHz**
-     - Rest frequencies in GHz that can be chosen in the desktop or VR GUIs. 
+     - Rest frequencies in GHz that can be chosen in the desktop or VR
      
-       These are used for frequency <-> velocity conversions. Add more to
+       GUIs. These are used for frequency <-> velocity conversions. Add
        
-       avoid typing in manually every session. Default: 
+       more to avoid typing in manually every session. Default: 
      
        ``{"HI": 1.420406, "12CO(1-0)": 115.271, "12CO(2-1)": 230.538, 
      
@@ -165,7 +165,7 @@ Config Options
    :header-rows: 1
 
    * - **Moment Map Setting**
-     - Description 
+     - Description
    * - **momentMaps.defaultThresholdType**
      - Default threshold type to use when calculating moment maps.
      
