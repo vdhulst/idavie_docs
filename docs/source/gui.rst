@@ -215,6 +215,28 @@ This window displays the three types of sources that can be used with iDaVIE: ma
 18) Source name will appear here for all lists. For the New List, this will take the original name of the added source.
 19) Button to remove the indicated source from the New List.
 
+Source Info Window
+~~~~~~~~~~~~~~~~~~
+
+The Source Info window displays the information of the selected source. This includes basic info, calculated stats (in the case of mask sources), and imported columns (in the case of imported sources). 
+
+**Note:** The location of the stats calculation for masked sources code is located `here in the iDaVIE repository. <https://github.com/idia-astro/iDaVIE/blob/6f644a5a3ef0b6339cddeaa52438c431023aad54/native_plugins_cmake/data_analysis_tool.cpp#L451>`_
+
+.. raw:: html
+     
+          <img src="_static/SourceInfo.png"
+               style="width:100%;height:auto;">
+
+1) The number of the source in its list.
+2) Information about the position of the source. This will either be the weighted **centroid** (in case of mask sources) or the physical **center** of the box (in the case of imported and selection boxes).
+3) The calculated sum of the data values for masked sources. This is the integrated intensity of the source.
+4) The calculated peak data value of the masked source.
+5) The calculated the source's systemic velocity, or the velocity of its centroid (in voxel units).
+6) The calculated spectral line width at 20% of the peak intensity of the source (in voxel units).
+7) The calculated the source's systemic velocity, or the velocity of its centroid (in physical units).
+8) The calculated spectral line width at 20% of the peak intensity of the source (in physical units).
+9) The current flag of the source. This can be set in the Source List window.
+
 Settings Window
 ^^^^^^^^^^^^^^^
 
@@ -274,7 +296,7 @@ The Plots window gives the user access to useful 2D plots calculated in realtime
 
 
 Keypad
-^^^^^^
+~~~~~~
 
 The Keypad is a virtual keypad that can be used to input custom values for the moment map thresholds and the min/max scales of the histogram. The user can use the primary controller to point at the buttons and the trigger to enter the number and click Confirm to apply the value.
 
