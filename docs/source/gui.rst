@@ -80,6 +80,8 @@ The STATS tab includes options to check and interact with some basic data statis
 6) Button to set all of the above options to their default values.
 
 
+.. _sourcestab:
+
 SOURCES tab
 ^^^^^^^^^^^
 
@@ -218,6 +220,8 @@ This window displays the three types of sources that can be used with iDaVIE: ma
 17) For imported sources, this button populates the menu with the next list.
 18) Source name will appear here for all lists. For the New List, this will take the original name of the added source.
 19) Button to remove the indicated source from the New List.
+
+.. _infowindow:
 
 Source Info Window
 ~~~~~~~~~~~~~~~~~~

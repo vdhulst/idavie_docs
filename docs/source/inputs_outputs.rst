@@ -47,12 +47,22 @@ iDaVIE provides:
      - The right ascension of the source's position.
    * - :literal:`dec`
      - The declination of the source's position.
-   * - :literal:`zType`
-     - ?
+   * - :literal:`\<z-coordinate\>`
+     - The physical coordinate of the z-axis (i.e. velocity, frequency, redshift, etc.).
+  
+       The name of the column will depend on the header of the cube.
    * - :literal:`Flag (dd/MM/yy_HH:mm)`
      - The user-defined flag attached to the source when the table is saved.
-   * - :literal:`RawDataKey1`
-     - At least one column of raw data, possibly more than one.
+   * - :literal:`\<others\>`
+     - Other columns may be included as well, depending on the type of source
+       
+       list being exported. For example, masked sources will have columns pertaining
+       
+       to the calculated mask statistics that are viewable in the :ref:`infowindow`
+       
+       while imported sources will include the imported columns that were selected 
+       
+       in the :ref:`sourcestab`.
 
 * **log** Debug files created by iDaVIE, stored in :literal:`Output/Logs`. Used for error reporting and should be attached when reporting issues.
 * **CSV** Spectral profiles calculated from masked sources in the VR :ref:`plots` can be exported as CSV files, stored in :literal:`Output/SpectralProfiles`.
