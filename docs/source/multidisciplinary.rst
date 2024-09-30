@@ -85,15 +85,6 @@ Single timestamp from a cosmological simulation using smoothed particle hydrodyn
 Single timestamp of a simulated galaxy merger. Particles can be rendered with different colours, sizes, opacities, and shapes depending on different parameters from the data set. Here particles are coloured by their origin (disk, bulge, halo, etc.) with diverging colourmaps to be reviewed in a post-merger time stamp. See `(Deg et al. 2019) <https://academic.oup.com/mnras/article/486/4/5391/5484877>`_ for more background on the data used.
 
 
-Astrobiology
-^^^^^^^^^^^^
-
-.. image:: _static/octopus_logo.gif
-    :alt: iDaVIE used with octopus CT scan
-    :width: 60% 
-
-CT scan of an octopus for visualizing the complex decentralized nervous systems that make up alternative forms of intelligence. See `(Sivitilli et al. 2023) <https://www.biorxiv.org/content/10.1101/2023.07.31.551380v1.abstract>`_ for more details on the project.
-
 Neuroscience
 ^^^^^^^^^^^^
 
@@ -112,6 +103,16 @@ Medical Imaging
     :width: 60% 
 
 MRI data of a human brain. This was loaded as a proof of concept to show how iDaVIE can be used to visualise medical imaging data. We have also discussed with the neuroscience community about potentially adapting iDaVIE to be used as a training tool for neurosurgeons to achieve spatial awareness of the brain.
+
+
+Biology
+^^^^^^^^^^^^
+
+.. image:: _static/octopus_logo.gif
+    :alt: iDaVIE used with octopus CT scan
+    :width: 60% 
+
+CT scan of an octopus for visualizing the complex decentralized nervous systems that make up alternative forms of intelligence. See `(Sivitilli et al. 2023) <https://www.biorxiv.org/content/10.1101/2023.07.31.551380v1.abstract>`_ for more details on the project.
 
 
 Chemical Engineering
