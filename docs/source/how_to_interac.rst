@@ -74,9 +74,21 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
    * - "projection maximum"
      - Utilise ray-marching with maximum voxel intensity algorithm.
 
+       This takes the maximum value along the line-of-sight for 
+
+       applying the colour map. The algorithm can be found
+
+       at this `location in the iDaVIE shader code. <https://github.com/idia-astro/iDaVIE/blob/6f644a5a3ef0b6339cddeaa52438c431023aad54/Assets/Shaders/Volumes/BasicVolume.cginc#L368>`_
+
        (**DEFAULT**)
    * - "projection average"
      - Utilise ray-marching with average along line-of-sight algorithm.
+
+       This takes the average value of the voxels along the line-of-sight
+       
+       for applying the colour map. The algorithm can be found 
+       
+       at this `location in the iDaVIE shader code <https://github.com/idia-astro/iDaVIE/blob/6f644a5a3ef0b6339cddeaa52438c431023aad54/Assets/Shaders/Volumes/BasicVolume.cginc#L257>`_.
    * - **Changing downsampling settings**
      -
    * - "sampling mode maximum"
