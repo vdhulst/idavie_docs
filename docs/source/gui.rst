@@ -53,7 +53,7 @@ The RENDER tab includes options to tune the rendering parameters of the cube.
      <img src="_static/Desktop2.png"
           style="width:100%;height:auto;">
 
-1) Dropdown menu to set a precalculated size for the cube side lengths. The default is :literal:`X=Y=Z`, setting the cube to 1x1x1 size. The other option of :literal:`X:Y:Z` sets the side lengths of the cube to have the same ratio as the data dimensions.
+1) Dropdown menu to set a precalculated size for the cube side lengths. The default is :literal:`X=Y=Z`, setting the cube to 1x1x1 size. The other option of :literal:`X=Y` sets the X and Y lengths of the cube equal (to be a square) and sets the Z length to have the same ratio as the X and Z lengths of the data cube. 
 2) Dropdown menu to set the applied colour map for the cube. The default is the Inferno colour map.
 3) Slider to adjust the minimum threshold of the cube. This sets what data value will be both the lowest end of the colour map as well as an alpha value of 0.
 4) Slider to adjust the maximum threshold of the cube. This sets what data value will be both the highest end of the colour map as well as an alpha value of 1.
@@ -144,22 +144,24 @@ The Quick menu is the main menu the user will interact with in the VR environmen
           <img src="_static/QuickMenu.png"
                style="width:50%;height:auto;">
 
-1) Open the Source List window.
-2) Open the Plots window.
-3) Open the Voice Command window.
-4) Open the Settings window.
-5) Open the Colour Map window.
-6) Enter mask painting mode.
+1) Open the :ref:`sourcelist`.
+2) Open the :ref:`plots`.
+3) Open the :ref:`voicecommands`.
+4) Open the :ref:`settings`.
+5) Open the :ref:`colourmap`.
+6) Open the :ref:`maskpainting` and start mask painting mode.
 7) Save the mask to file.
 8) Toggle to crop the cube to the selected region or uncrop the cube if already cropped.
 9) Toggle the mask application options (voice command analogue in brackets). Options are to subtract the unmasked regions ("mask on"), subtract the masked regions ("mask invert"), show the mask by itself ("mask isolate"), or show the cube without the mask ("mask off").
 10) Take a screenshot of the current view.
 11) Exit iDaVIE.
 
+.. _maskpainting:
+
 Mask painting menu
 ^^^^^^^^^^^^^^^^^^
 
-In the mask painting mode, the user can paint the mask using the controllers. The primary controller is used to paint the mask and adjust the brush size, while the secondary controller can be used to undo/redo brush strokes. Masks work by numbering voxels as integers corresponding to the Source ID of the masked region. Non-masked voxels are numbered as 0. Once started, the Mask painting menu will open on the secondary controller. The various buttons for the menu are detailed below.
+In the mask painting mode, the user can paint the mask using the controllers. The primary controller is used to paint the mask and adjust the brush size, while the secondary controller can be used to undo/redo brush strokes. Masks work by numbering voxels as integers corresponding to the :literal:`Source ID` of the masked region. Non-masked voxels are numbered as 0. Once started, the Mask painting menu will open on the secondary controller. The various buttons for the menu are detailed below.
 
 **NOTE:** Paint mode can only be started if the cube is at full resolution. If the cube is not at full resolution, the user will be prompted to increase the resolution before starting paint mode by cropping the cube.
 
@@ -169,7 +171,7 @@ In the mask painting mode, the user can paint the mask using the controllers. Th
                style="width:50%;height:auto;">
 
 1) Activate additive brush mode. This allows the user to add to the mask by painting with the primary controller. The value of the mask is set to the current Source ID that will be indicated at the top of the menu.
-2) Activate subtractive brush or "eraser" mode. This allows the user to subtract from the mask by painting with the primary controller. The value of the mask is set to 0 in this mode.
+2) Activate subtractive brush or **eraser** mode. This allows the user to subtract from the mask by painting with the primary controller. The value of the mask is set to 0 in this mode.
 3) Increase the brush size by increasing the voxel number of the brush head. This can also be done by moving the thumbstick of the primary controller up.
 4) Decrease the brush size by increasing the voxel number of the brush head. This can also be done by moving the thumbstick of the primary controller down.
 5) Reset the brush size by setting the brush head to a single voxel.
@@ -178,12 +180,14 @@ In the mask painting mode, the user can paint the mask using the controllers. Th
 8) Undo the last brush stroke.
 9) Redo the last undone brush stroke.
 10) Save the mask to file.
-11) Set the Source ID to a new number, effectively adding a new masked source to paint in the scene. These start at 1000 and increment by 1 for each new source.
+11) Set the :literal:`Source ID` to a new number, effectively adding a new masked source to paint in the scene. These start at 1000 and increment by 1 for each new source.
 12) Enable source-selection mode. This allows the user to select sources in the scene by pointing at them with the primary controller and pressing the trigger.
-13) Open the Source List window. This can be useful for observing changes in the Info Window as sources are changed with painting
-14) Open the Plots window. This can be useful for observing changes in the calculated moment maps or spectral profiles as sources are changed with painting. 
-15) Exit mask painting mode.
+13) Open the :ref:`sourcelist`. This can be useful for observing changes in the Info Window as sources are changed with painting
+14) Open the :ref:`plots`. This can be useful for observing changes in the calculated moment maps or spectral profiles as sources are changed with painting. 
+15) Exit mask painting mode. You will be prompted to save if the mask has been changed.
 
+
+.. _sourcelist:
 
 Source List Window
 ^^^^^^^^^^^^^^^^^^
@@ -198,7 +202,7 @@ This window displays the three types of sources that can be used with iDaVIE: ma
 1) Button to select the indicated source.
 2) Button to teleport the user to the indicated source.
 3) Button to toggle the visibility of the indicated source.
-4) Button to toggle the flag of the indicated source to a string value of the user's choice. By default these are -1, 0, and 1. The available flag strings can be changed in the config file.
+4) Button to toggle the flag of the indicated source to a string value of the user's choice. By default these are :literal:`-1`, :literal:`0`, and :literal:`1`. The available flag strings can be changed in the config file.
 5) Button to add the indicated source to the New List.
 6) This bar shows the applied colour of the current source list.
 7) Each source in a list has an integer value associated with it.
@@ -207,7 +211,7 @@ This window displays the three types of sources that can be used with iDaVIE: ma
 10) Button to change the colour of the current source list.
 11) Button to make the current source list visible.
 12) Button to hide the current source list.
-13) Button to save the current source list to an iDaVIE VOTable.xml file.
+13) Button to save the current source list to an iDaVIE VOTable :literal:`.xml` file.
 14) Source name will appear here for all lists. For imported sources, this can be assigned to a column with the dropdown in the SOURCES tab of the Desktop GUI.
 15) The name of the list will appear here. For imported sources this will be the file name.
 16) For imported sources, this button populates the menu with the previous list.
@@ -237,6 +241,8 @@ The Source Info window displays the information of the selected source. This inc
 8) The calculated spectral line width at 20% of the peak intensity of the source (in physical units).
 9) The current flag of the source. This can be set in the Source List window.
 
+.. _settings:
+
 Settings Window
 ^^^^^^^^^^^^^^^
 
@@ -248,9 +254,9 @@ The Settings window allows the user to adjust the rendering settings of the cube
                style="width:100%;height:auto;">
 
 1) Arrow buttons to change the applied colour map of the cube.
-2) Sets the colour map to the default, which is Inferno.
-3) Arrow buttons to change the scaling function of the applied colour map. These include linear, log, sqrt, x^2, power, and gamma correction.
-4) Sets the scaling function to the default, which is linear.
+2) Sets the colour map to the default, which is :literal:`Inferno`.
+3) Arrow buttons to change the scaling function of the applied colour map. These include :literal:`linear`, :literal:`log`, :literal:`sqrt`, :literal:`x^2`, :literal:`power`, and :literal:`gamma correction`. The location of the scaling function code is located `here in the shader code of the iDaVIE repository <https://github.com/idia-astro/iDaVIE/blob/6f644a5a3ef0b6339cddeaa52438c431023aad54/Assets/Shaders/Volumes/BasicVolume.cginc#L439>`_.
+4) Sets the scaling function to the default, which is :literal:`linear`.
 5) Adjust the minimum threshold of the cube. This sets what data value will be both the lowest end of the colour map as well as an alpha value of 0.
 6) Reset the minimum threshold to the default value, which is the minimum scale value of the histogram.
 7) Adjust the maximum threshold of the cube. This sets what data value will be both the highest end of the colour map as well as an alpha value of 1.
@@ -258,7 +264,7 @@ The Settings window allows the user to adjust the rendering settings of the cube
 9) Scroll through the different rest frequencies of the cube. This is used to convert between frequency/wavelength and velocity units for spectral cubes. The values include Default (rest frequency from the cube header), Custom (user input rest frequency), and the values defined in the config file.
 10) Choose the primary hand for the user. This can be set to left or right.
 11) Set the steps of the moment map threshold adjustment. When the user adjusts the custom threshold for the moment maps in the Plots menu, this number will be the step size.
-12) Open the keypad to input a custom moment map threshold step size (see Keypad below).
+12) Open the :ref:`keypad` to input a custom moment map threshold step size.
 
 .. _plots:
 
@@ -284,16 +290,18 @@ The Plots window gives the user access to useful 2D plots calculated in realtime
 3) The colourbar for the moment maps. Colour settings can be adjusted in the config file using the :literal:`momentMaps.m0.colorMap` and :literal:`momentMaps.m1.colorMap` settings.
 4) What voxels to include for the moment map calculations. This can be set to Threshold which uses the threshold data values set below or Mask which uses the mask to exclude voxels.
 5) The minimum threshold for the moment map calculations. This sets the minimum data value to include in the moment map calculations.
-6) Open the Keypad (see below) to input a custom threshold value.
+6) Open the :ref:`keypad` to input a custom threshold value.
 7) Select whether to use ZScale or MinMax scaling the colour maps to the calculated moment maps. ZScale is the default scaling function. MinMax simply scales the colour maps to the minimum and maximum data values of the moment maps.
 8) Save the moment maps to a :literal:`.png` image with the colour bar included. The image will be saved to the Outputs directory, :literal:`Output/MomentMaps/Moment_map_yyyyMMdd_Hmmss.png`, where :literal:`yyyyMMdd_Hmmss` is the timestamp when the file is saved.
 9) Save the moment maps to two separate :literal:`.fits` images with units embedded. The images will be saved to the Outputs directory, :literal:`Output/MomentMaps/Moment_map_[0/1]_yyyyMMdd_Hmmss.fits`, where :literal:`yyyyMMdd_Hmmss` is the timestamp when the files are saved.
 10) Edit the min/max bounds of the histogram. This will also set the minimum and maximum data values where the colourmap scales. This should be adjusted at the beginning of the session while Threshold adjustments should be used for "fine tuning" with the controllers.
-11) Open the Keypad (see below) to input a custom min/max scale value.
+11) Open the :ref:`keypad` to input a custom min/max scale value.
 12) Button to apply the new min/max scales for the histogram.
 13) Button to reset the min/max scales to the default values, which are the min/max data values of the cube.
 14) Save the Spectral Profile to a :literal:`.csv` file in the Outputs directory.
 
+
+.. _keypad:
 
 Keypad
 ~~~~~~
@@ -306,6 +314,7 @@ The Keypad is a virtual keypad that can be used to input custom values for the m
                style="width:30%;height:auto;">
 
 
+.. _voicecommands:
 
 Voice Command Window
 ^^^^^^^^^^^^^^^^^^^^
@@ -319,6 +328,8 @@ The Voice Command window displays the available voice commands that the user can
 
 1) Click the arrow button to manually activate the voice command.
 2) Use the scroll buttons to view more voice commands. The list can also be scrolled by moving the thumbstick up and down while the laser pointer is hovering over the list.
+
+.. _colourmap:
 
 Colourmap Winow
 ^^^^^^^^^^^^^^^
@@ -351,10 +362,10 @@ The 3D cursor will provide information about the current voxel under the cursor.
 4) Image coordinates of the voxel under the cursor. This is the voxel index in the cube and is 1-indexed.
 5) Data value of the voxel under the cursor. The unit is determined by the cube header.
 6) The alternate spectral coordinate of the voxel under the cursor. This is calculated using the rest frequency of the cube and the spectral coordinate.
-7) The red microphone icon indicates that voice commands are currently inactive. This could be due to the user being in "push to talk" mode without the talk button (secondary thumb button on primary controller) pressed or the iDaVIE window is not in focus.
+7) The red microphone icon indicates that voice commands are currently inactive. This could be due to the user being in **push-to-talk** mode without the talk button (secondary thumb button on primary controller) pressed or the iDaVIE window is not in focus.
 8) iDaVIE window focus indicator. This will be present if the iDaVIE window is not in focus. This can be resolved by clicking on the iDaVIE window on the desktop. If this is present, voice commands will not be active.
 9) The Source ID of the voxel under the cursor. This will not be visible if the voxel is not part of a mask source. 
-10) The green microphone icon indicates that voice commands are currently active. This will be present when the user is in "push to talk" mode and the talk button is pressed.
+10) The green microphone icon indicates that voice commands are currently active. This will be present when the user is in **push-to-talk** mode and the talk button is pressed.
 11) While in threshold adjustment mode, the Min value is displayed here. This is the minimum data value both where the colourmap will start and where the alpha value will be 0.
 12) While in threshold adjustment mode, the Max value is displayed here. This is the maximum data value both where the colourmap will end and where the alpha value will be 1.
 13) While in selection mode, the Region shows the voxel dimensions of the selected region.
