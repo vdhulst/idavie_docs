@@ -82,7 +82,7 @@ Single timestamp from a cosmological simulation using smoothed particle hydrodyn
     :alt: iDaVIE used with simulated galaxy mergers
     :width: 60% 
 
-Single timestamp of a simulated galaxy merger. Particles can be rendered with different colours, sizes, opacities, and shapes depending on different parameters from the data set. Here particles are colored by their origin (disk, bulge, halo, etc.) with diverging colormaps to be reviewed in a post-merger time stamp. See `(Deg et al. 2019) <https://academic.oup.com/mnras/article/486/4/5391/5484877>`_ for more background on the data used.
+Single timestamp of a simulated galaxy merger. Particles can be rendered with different colours, sizes, opacities, and shapes depending on different parameters from the data set. Here particles are coloured by their origin (disk, bulge, halo, etc.) with diverging colourmaps to be reviewed in a post-merger time stamp. See `(Deg et al. 2019) <https://academic.oup.com/mnras/article/486/4/5391/5484877>`_ for more background on the data used.
 
 
 Astrobiology

@@ -14,6 +14,46 @@ iDaVIE provides:
 
 * **PNG** Screenshots and moment maps exported as PNG files, stored in :literal:`Output/Camera` and :literal:`Output/MomentMaps` respectively.
 * **VOTable** Catalog exported from an edited or created mask, stored in :literal:`Output/Catalogs`.
+
+  * iDaVIE outputs the following columns:
+
+.. list-table::
+   :widths: 25 65
+   :header-rows: 1
+
+   * - **Column name**
+     - **Description**
+   * - :literal:`id`
+     - The unique number (in this catalogue) associated with the source.
+   * - :literal:`x`
+     - The x-position of the source's centre.
+   * - :literal:`y`
+     - The y-position of the source's centre.
+   * - :literal:`z`
+     - The z-position of the source's centre.
+   * - :literal:`x_min`
+     - The lowest x-value of the source's bounds.
+   * - :literal:`x_max`
+     - The highest x-value of the source's bounds.
+   * - :literal:`y_min`
+     - The lowest y-value of the source's bounds.
+   * - :literal:`y_max`
+     - The highest y-value of the source's bounds.
+   * - :literal:`z_min`
+     - The lowest z-value of the source's bounds.
+   * - :literal:`z_max`
+     - The highest z-value of the source's bounds.
+   * - :literal:`ra`
+     - The right ascension of the source's position.
+   * - :literal:`dec`
+     - The declination of the source's position.
+   * - :literal:`zType`
+     - ?
+   * - :literal:`Flag (dd/MM/yy_HH:mm)`
+     - The user-defined flag attached to the source when the table is saved.
+   * - :literal:`RawDataKey1`
+     - At least one column of raw data, possibly more than one.
+
 * **log** Debug files created by iDaVIE, stored in :literal:`Output/Logs`. Used for error reporting and should be attached when reporting issues.
 * **CSV** Spectral profiles calculated from masked sources in the VR :ref:`plots` can be exported as CSV files, stored in :literal:`Output/SpectralProfiles`.
 * **FITS** Created or modified masks, or moment maps exported as FITS files:

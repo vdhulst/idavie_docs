@@ -33,7 +33,7 @@ The 3D cursor will provide information about the current voxel under the cursor.
   <img src="_static/Cursor-feedback.png" style="width:560px; height:315px;">
 
 
-The controller can also be used to adjust the minimum and maximum thresholds of the applied color map of the cube. Using the "Edit min" or "Edit max" voice command, the user can move the primary controller up and down to adjust either threshold:
+The controller can also be used to adjust the minimum and maximum thresholds of the applied colour map of the cube. Using the "Edit min" or "Edit max" voice command, the user can move the primary controller up and down to adjust either threshold:
 
 
 .. raw:: html

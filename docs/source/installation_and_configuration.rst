@@ -220,7 +220,7 @@ In this section we share some useful tips where we found a solution to a known i
 
   #. take the headset off 
   
-  #. make sure the iDaVIE Desktop GUI is front and center and no other windows are in front of it
+  #. make sure the iDaVIE Desktop GUI is front and centre and no other windows are in front of it
   
   #. use the Windows search function (lower left hand corner - says Type here to search), and type audio
   
