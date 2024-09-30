@@ -3,9 +3,7 @@
 "How to" demos
 ==============
 
-.. note:: This section is under construction. Some elements in the videos may slightly differ from what the user actually see in the rendering of the current software. We apologise for the inconvenience.
-
-In this section we display example videos that should intuitively explain how to use iDaVIE.
+In this section we display example videos that should intuitively explain how to use iDaVIE. We made use of a sample data cube of the Fornax galaxy cluster, which is `available at this link <https://sites.google.com/inaf.it/meerkatfornaxsurvey/data#h.p_m3V9IHl56i6D>`_. The *Loni et al. (2021)* paper that gives more details about the data is `available here <https://ui.adsabs.harvard.edu/abs/2021A%26A...648A..31L/abstract>`_. We also use a mask that was created using the `HI Source Finding Application (SoFiA) <https://gitlab.com/SoFiA-Admin/SoFiA-2>`_.
 
 Explore a cube
 ^^^^^^^^^^^^^^
@@ -73,7 +71,8 @@ iDaVIE allows the user to load catalogs from the Desktop GUI and overplot them o
         <div style="height: 20px;"></div>
 
 Create statistics and save moment maps
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 iDaVIE allows the user to investigate the basic statistics of the cube and to create both moment 0 and moment 1 maps of a data cube. The user can create the moment maps for the entire cube or for a single selected region. In case a mask is available, the moment maps thresholds are set by the mask, but they can be changed manually. If no mask is available, then the thresholds should be set manually using the options available in the moment map windows. The moment maps can then be saved as a png or 2D fits image.
 
 .. raw:: html
