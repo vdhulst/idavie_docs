@@ -225,7 +225,7 @@ The Source Info window displays the information of the selected source. This inc
 .. raw:: html
      
           <img src="_static/SourceInfo.png"
-               style="width:100%;height:auto;">
+               style="width:50%;height:auto;">
 
 1) The number of the source in its list.
 2) Information about the position of the source. This will either be the weighted **centroid** (in case of mask sources) or the physical **center** of the box (in the case of imported and selection boxes).
@@ -279,7 +279,7 @@ The Plots window gives the user access to useful 2D plots calculated in realtime
 1) Displays the moment 0 map of the currently cropped region of the cube. The moment 0 map is the integrated intensity of the cube.
 2) Displays the moment 1 map of the currently cropped region of the cube. The moment 1 map is the intensity weighted velocity field of the cube.
 
-**NOTE:** The code for the moment map calculation is located `here in the iDaVIE repository. <https://github.com/idia-astro/iDaVIE/blob/6f644a5a3ef0b6339cddeaa52438c431023aad54/Assets/Resources/MomentMapGenerator.compute#L23>`_
+**NOTE:** The code for the moment map calculation is located `here in the iDaVIE repository <https://github.com/idia-astro/iDaVIE/blob/6f644a5a3ef0b6339cddeaa52438c431023aad54/Assets/Resources/MomentMapGenerator.compute#L23>`_.
 
 3) The colourbar for the moment maps. Colour settings can be adjusted in the config file using the :literal:`momentMaps.m0.colorMap` and :literal:`momentMaps.m1.colorMap` settings.
 4) What voxels to include for the moment map calculations. This can be set to Threshold which uses the threshold data values set below or Mask which uses the mask to exclude voxels.
